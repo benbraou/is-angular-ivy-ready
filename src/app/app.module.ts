@@ -7,7 +7,10 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [AppComponent, NavbarComponent],
-  imports: [BrowserModule, FlexLayoutModule],
+  imports: [
+    BrowserModule.withServerTransition({ appId: 'is-angular-ivy-ready' }),
+    FlexLayoutModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

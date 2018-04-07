@@ -5,7 +5,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod",
+    "build:ssr": "npm run build:client-and-server-bundles && npm run webpack:server",
+    "serve:ssr": "node dist/server.js",
+    "build:client-and-server-bundles": "ng build --prod && ng build --prod --app 1 --output-hashing=false",
+    "webpack:server": "webpack --config webpack.server.config.js --progress --colors",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -31,10 +34,13 @@
     "@angular/material": "^5.2.4",
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
+    "@angular/platform-server": "^5.2.9",
     "@angular/router": "^5.2.0",
+    "@nguniversal/module-map-ngfactory-loader": "^5.0.0",
     "core-js": "^2.4.1",
     "ramda": "^0.25.0",
     "rxjs": "^5.5.6",
+    "ts-loader": "^3.5.0",
     "zone.js": "^0.8.19"
   },
   "devDependencies": {
