@@ -6,6 +6,7 @@ import { MaterialModule } from './material.module';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { LoggerService } from './services/logger.service';
 
 @NgModule({
   declarations: [AppComponent, NavbarComponent],
@@ -15,7 +16,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     MaterialModule,
     FlexLayoutModule,
   ],
-  providers: [],
+  providers: [LoggerService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
