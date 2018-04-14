@@ -2,9 +2,6 @@ import { Component, Input } from '@angular/core';
 
 import { OverallStatus } from './../../models';
 
-@Component({ selector: 'app-hello-world', template: 'Hello World!' })
-export class HelloWorldComponent {}
-
 /**
  * OverallStatusComponent is a presentation component whose job is to display overall status on Ivy
  * implementation: (progress percentage, number of implemented features and number of pending
@@ -17,5 +14,4 @@ export class HelloWorldComponent {}
 })
 export class OverallStatusComponent {
   @Input() status: OverallStatus;
-  HelloWorldComponent = HelloWorldComponent;
 }
