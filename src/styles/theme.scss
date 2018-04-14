@@ -1,10 +1,18 @@
 @import '~@angular/material/theming';
+@import '../app/components/overall-status/overall-status.theme.scss';
+
 @include mat-core();
 
 $ivy-primary: mat-palette($mat-pink, 500, 400, 800);
 $ivy-accent:  mat-palette($mat-red, 700, 600, 800);
 $ivy-warn:    mat-palette($mat-red);
 
+@mixin custom-components-theme($theme) {
+  @include overall-status-component-theme($theme);
+}
+
 $ivy-theme: mat-light-theme($ivy-primary, $ivy-accent, $ivy-warn);
 
+// For the time being, only one theme is handled
 @include angular-material-theme($ivy-theme);
+@include custom-components-theme($ivy-theme);

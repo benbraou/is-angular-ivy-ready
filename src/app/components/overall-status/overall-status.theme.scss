@@ -1,0 +1,10 @@
+@import '~@angular/material/theming';
+
+@mixin overall-status-component-theme($theme) {
+  $primary: map-get($theme, primary);
+  app-overall-status {
+    h1 {
+      color: mat-color($primary);
+    }
+  }
+}
