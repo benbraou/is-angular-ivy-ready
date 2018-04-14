@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
@@ -13,7 +12,6 @@ import { ComponentModule } from './components/component.module';
   imports: [
     BrowserModule.withServerTransition({ appId: 'is-angular-ivy-ready' }),
     BrowserAnimationsModule,
-    FlexLayoutModule,
     ComponentModule.forRoot(),
     RoutingModule,
   ],
