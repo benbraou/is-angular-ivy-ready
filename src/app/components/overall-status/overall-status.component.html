@@ -1,12 +1,24 @@
 <mat-card class="mat-typography">
   <h1>Overall status</h1>
-  <div fxLayout='row'>
-      <mat-progress-spinner
-      [strokeWidth]="'8'"
+  <div fxLayout="row wrap" fxLayoutAlign="center">
+    <mat-progress-spinner
+      [strokeWidth]="'4'"
       [color]="'red'"
       [mode]="'determinate'"
-      [value]="'10'"
-      caption >
+      [value]="status.progressPercentage"
+      caption>
     </mat-progress-spinner>
+    <mat-divider [inset]="true"></mat-divider>
+  </div>
+  <div fxLayout="row" class="stats">
+    <div fxFlex="1 1 50%">
+      <h3>{{status.nbrFeaturesCompleted}}</h3>
+      <h3>Completed</h3>
+    </div>
+    <mat-divider fxFlex="0 0 0%" [inset]="true" [vertical]="true"></mat-divider>
+    <div fxFlex="1 1 50%">
+      <h3>{{status.nbrFeaturesPending}}</h3>
+      <h3>Pending</h3>
+    </div>
   </div>
 </mat-card>

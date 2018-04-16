@@ -2,9 +2,27 @@
 
 @mixin overall-status-component-theme($theme) {
   $primary: map-get($theme, primary);
+  $config: mat-typography-config();
+
   app-overall-status {
-    h1 {
-      color: mat-color($primary);
+    .mat-typography {
+      h1 {
+        color: mat-color($primary);
+      }
+      h3 {
+        > span {
+          color: mat-color($primary);
+        }
+        margin: 0;
+      }
+      .stats {
+        > div {
+          > h3:first-child {
+            color: mat-color($primary);
+            font-size: mat-font-size($config, headline);
+          }
+        }
+      }
     }
   }
 }

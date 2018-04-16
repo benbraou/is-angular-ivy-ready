@@ -14,4 +14,5 @@ import { OverallStatus } from './../../models';
 })
 export class OverallStatusComponent {
   @Input() status: OverallStatus;
+  constructor() {}
 }

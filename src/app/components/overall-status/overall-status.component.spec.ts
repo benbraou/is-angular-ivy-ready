@@ -1,5 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { MatProgressSpinnerModule, MatCardModule } from '@angular/material';
+import {
+  MatProgressSpinnerModule,
+  MatCardModule,
+  MatDividerModule,
+} from '@angular/material';
 
 import { OverallStatusComponent } from './overall-status.component';
 
@@ -11,7 +15,7 @@ describe('OverallStatusComponent', () => {
     async(() => {
       TestBed.configureTestingModule({
         declarations: [OverallStatusComponent],
-        imports: [MatProgressSpinnerModule, MatCardModule],
+        imports: [MatProgressSpinnerModule, MatCardModule, MatDividerModule],
       }).compileComponents();
     })
   );
@@ -23,6 +27,11 @@ describe('OverallStatusComponent', () => {
   });
 
   it('should create', () => {
+    component.status = {
+      progressPercentage: 19,
+      nbrFeaturesPending: 12,
+      nbrFeaturesCompleted: 15,
+    };
     expect(component).toBeTruthy();
   });
 });
