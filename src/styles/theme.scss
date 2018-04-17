@@ -3,7 +3,7 @@
 
 @include mat-core();
 
-$ivy-primary: mat-palette($mat-pink, 500, 400, 800);
+$ivy-primary: mat-palette($mat-light-blue, 500, 400, 800);
 $ivy-accent:  mat-palette($mat-red, 700, 600, 800);
 $ivy-warn:    mat-palette($mat-red);
 
