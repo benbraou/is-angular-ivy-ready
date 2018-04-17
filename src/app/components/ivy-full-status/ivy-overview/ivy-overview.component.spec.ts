@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { Component } from '@angular/core';
 
 import { IvyOverviewComponent } from './ivy-overview.component';
 import { StatsSummaryComponent } from '../../common/stats-summary/stats-summary.component';
@@ -11,7 +12,11 @@ describe('IvyOverviewComponent', () => {
   beforeEach(
     async(() => {
       TestBed.configureTestingModule({
-        declarations: [IvyOverviewComponent, StatsSummaryComponent],
+        declarations: [
+          IvyOverviewComponent,
+          StatsSummaryComponent,
+          UsefulLinksStubComponent,
+        ],
         imports: [MaterialModule],
       }).compileComponents();
     })
@@ -27,3 +32,6 @@ describe('IvyOverviewComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
+@Component({ selector: 'app-useful-links', template: '' })
+class UsefulLinksStubComponent {}

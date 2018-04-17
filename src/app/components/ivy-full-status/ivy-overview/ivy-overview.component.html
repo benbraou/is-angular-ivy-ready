@@ -1,6 +1,15 @@
-<app-stats-summary
-  [title] = "title"
-  [percentage]="percentage"
-  [nbrCompleted]="nbrCompleted"
-  [nbrPending]="nbrPending">
-</app-stats-summary>
+<div fxLayout="row wrap">
+    <app-stats-summary
+      fxFlex.gt-xs="100"
+      fxFlex.gt-sm="50"
+      [title]="title"
+      [percentage]="percentage"
+      [nbrCompleted]="nbrCompleted"
+      [nbrPending]="nbrPending" >
+    </app-stats-summary>
+    <app-useful-links
+      fxFlex.gt-xs="100"
+      fxFlex.gt-sm="50"
+      fxHide.lt-sm>
+    </app-useful-links>
+</div>
