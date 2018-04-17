@@ -7,32 +7,32 @@ import {
   MatDividerModule,
 } from '@angular/material';
 
-import { OverallStatusComponent } from './overall-status.component';
+import { StatsSummaryComponent } from './stats-summary.component';
 
-describe('OverallStatusComponent', () => {
-  let component: OverallStatusComponent;
-  let fixture: ComponentFixture<OverallStatusComponent>;
+describe('StatsSummaryComponent', () => {
+  let component: StatsSummaryComponent;
+  let fixture: ComponentFixture<StatsSummaryComponent>;
 
   beforeEach(
     async(() => {
       TestBed.configureTestingModule({
-        declarations: [OverallStatusComponent],
+        declarations: [StatsSummaryComponent],
         imports: [MatProgressSpinnerModule, MatCardModule, MatDividerModule],
       }).compileComponents();
     })
   );
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(OverallStatusComponent);
+    fixture = TestBed.createComponent(StatsSummaryComponent);
     component = fixture.componentInstance;
   });
 
   it('should correctly display the overall status', () => {
-    component.status = {
-      progressPercentage: 19,
-      nbrFeaturesPending: 12,
-      nbrFeaturesCompleted: 15,
-    };
+    component.title = 'Overall status';
+    component.percentage = 19;
+    component.nbrCompleted = 15;
+    component.nbrPending = 12;
+
     fixture.detectChanges();
     expect(component).toBeTruthy();
 

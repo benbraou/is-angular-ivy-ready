@@ -1,5 +1,5 @@
 @import '~@angular/material/theming';
-@import '../app/components/overall-status/overall-status.theme.scss';
+@import '../app/components/common/stats-summary/stats-summary.theme.scss';
 
 @include mat-core();
 
@@ -8,7 +8,7 @@ $ivy-accent:  mat-palette($mat-red, 700, 600, 800);
 $ivy-warn:    mat-palette($mat-red);
 
 @mixin custom-components-theme($theme) {
-  @include overall-status-component-theme($theme);
+  @include stats-summary-component-theme($theme);
 }
 
 $ivy-theme: mat-light-theme($ivy-primary, $ivy-accent, $ivy-warn);

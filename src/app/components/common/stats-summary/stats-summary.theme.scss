@@ -1,10 +1,10 @@
 @import '~@angular/material/theming';
 
-@mixin overall-status-component-theme($theme) {
+@mixin stats-summary-component-theme($theme) {
   $primary: map-get($theme, primary);
   $config: mat-typography-config();
 
-  app-overall-status {
+  app-stats-summary {
     .mat-typography {
       h1 {
         color: mat-color($primary);

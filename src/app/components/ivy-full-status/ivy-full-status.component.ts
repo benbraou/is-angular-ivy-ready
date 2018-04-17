@@ -7,6 +7,7 @@ import { OverallStatus } from '../../models';
   styleUrls: ['./ivy-full-status.component.scss'],
 })
 export class IvyFullStatusComponent implements OnInit {
+  title = 'Overall status';
   overallStatus: OverallStatus = {
     progressPercentage: 70,
     nbrFeaturesCompleted: 15,

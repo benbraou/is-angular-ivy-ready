@@ -1,1 +1,6 @@
-<app-overall-status [status]="overallStatus"></app-overall-status>
+<app-stats-summary
+  [title] = "title"
+  [percentage]="overallStatus.progressPercentage"
+  [nbrCompleted]="overallStatus.nbrFeaturesCompleted"
+  [nbrPending]="overallStatus.nbrFeaturesPending">
+</app-stats-summary>

@@ -7,19 +7,19 @@ import { DirectiveModule } from '../directives/directive.module';
 
 import { IvyFullStatusComponent } from './ivy-full-status/ivy-full-status.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { OverallStatusComponent } from './overall-status/overall-status.component';
+import { StatsSummaryComponent } from './common/stats-summary/stats-summary.component';
 
 @NgModule({
   imports: [CommonModule, MaterialModule, FlexLayoutModule, DirectiveModule],
   declarations: [
     IvyFullStatusComponent,
     NavbarComponent,
-    OverallStatusComponent,
+    StatsSummaryComponent,
   ],
   exports: [
     IvyFullStatusComponent,
     NavbarComponent,
-    OverallStatusComponent,
+    StatsSummaryComponent,
     MaterialModule,
   ],
 })

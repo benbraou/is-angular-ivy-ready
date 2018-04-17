@@ -1,7 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { IvyFullStatusComponent } from './ivy-full-status.component';
-import { OverallStatusComponent } from '../overall-status/overall-status.component';
+import { StatsSummaryComponent } from '../common/stats-summary/stats-summary.component';
 import { MaterialModule } from '../material.module';
 
 describe('IvyStatusComponent', () => {
@@ -11,7 +11,7 @@ describe('IvyStatusComponent', () => {
   beforeEach(
     async(() => {
       TestBed.configureTestingModule({
-        declarations: [IvyFullStatusComponent, OverallStatusComponent],
+        declarations: [IvyFullStatusComponent, StatsSummaryComponent],
         imports: [MaterialModule],
       }).compileComponents();
     })
