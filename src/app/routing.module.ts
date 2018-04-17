@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { IvyStatusComponent } from './components/ivy-status/ivy-status.component';
+import { IvyFullStatusComponent } from './components/ivy-full-status/ivy-full-status.component';
 
 const routes: Routes = [
   {
@@ -12,7 +12,7 @@ const routes: Routes = [
   },
   {
     path: 'status',
-    component: IvyStatusComponent,
+    component: IvyFullStatusComponent,
   },
   {
     path: '**',

@@ -5,15 +5,19 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from './material.module';
 import { DirectiveModule } from '../directives/directive.module';
 
-import { IvyStatusComponent } from './ivy-status/ivy-status.component';
+import { IvyFullStatusComponent } from './ivy-full-status/ivy-full-status.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { OverallStatusComponent } from './overall-status/overall-status.component';
 
 @NgModule({
   imports: [CommonModule, MaterialModule, FlexLayoutModule, DirectiveModule],
-  declarations: [IvyStatusComponent, NavbarComponent, OverallStatusComponent],
+  declarations: [
+    IvyFullStatusComponent,
+    NavbarComponent,
+    OverallStatusComponent,
+  ],
   exports: [
-    IvyStatusComponent,
+    IvyFullStatusComponent,
     NavbarComponent,
     OverallStatusComponent,
     MaterialModule,

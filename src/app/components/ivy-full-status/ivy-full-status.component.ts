@@ -3,10 +3,10 @@ import { OverallStatus } from '../../models';
 
 @Component({
   selector: 'app-ivy-status',
-  templateUrl: './ivy-status.component.html',
-  styleUrls: ['./ivy-status.component.scss'],
+  templateUrl: './ivy-full-status.component.html',
+  styleUrls: ['./ivy-full-status.component.scss'],
 })
-export class IvyStatusComponent implements OnInit {
+export class IvyFullStatusComponent implements OnInit {
   overallStatus: OverallStatus = {
     progressPercentage: 70,
     nbrFeaturesCompleted: 15,
