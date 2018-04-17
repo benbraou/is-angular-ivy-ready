@@ -1,17 +1,18 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { Component, NO_ERRORS_SCHEMA } from '@angular/core';
 
 import { IvyFullStatusComponent } from './ivy-full-status.component';
-import { StatsSummaryComponent } from '../common/stats-summary/stats-summary.component';
 import { MaterialModule } from '../material.module';
 
-describe('IvyStatusComponent', () => {
+describe('IvyFullStatusComponent', () => {
   let component: IvyFullStatusComponent;
   let fixture: ComponentFixture<IvyFullStatusComponent>;
 
   beforeEach(
     async(() => {
       TestBed.configureTestingModule({
-        declarations: [IvyFullStatusComponent, StatsSummaryComponent],
+        declarations: [IvyFullStatusComponent],
+        schemas: [NO_ERRORS_SCHEMA],
         imports: [MaterialModule],
       }).compileComponents();
     })

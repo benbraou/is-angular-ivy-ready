@@ -8,6 +8,7 @@ import { DirectiveModule } from '../directives/directive.module';
 import { IvyFullStatusComponent } from './ivy-full-status/ivy-full-status.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { StatsSummaryComponent } from './common/stats-summary/stats-summary.component';
+import { IvyOverviewComponent } from './ivy-full-status/ivy-overview/ivy-overview.component';
 
 @NgModule({
   imports: [CommonModule, MaterialModule, FlexLayoutModule, DirectiveModule],
@@ -15,11 +16,13 @@ import { StatsSummaryComponent } from './common/stats-summary/stats-summary.comp
     IvyFullStatusComponent,
     NavbarComponent,
     StatsSummaryComponent,
+    IvyOverviewComponent,
   ],
   exports: [
     IvyFullStatusComponent,
     NavbarComponent,
     StatsSummaryComponent,
+    IvyOverviewComponent,
     MaterialModule,
   ],
 })
