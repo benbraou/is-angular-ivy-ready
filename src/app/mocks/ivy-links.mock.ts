@@ -2,6 +2,11 @@ import { IvyLink } from '../models';
 
 export const IVY_LINKS: IvyLink[] = [
   {
+    shortDescription: 'Ivy presentation at ng-conf',
+    fullDescription: 'Ivy presentation at ng-conf',
+    url: 'https://youtu.be/dIxknqPOWms?t=1359',
+  },
+  {
     shortDescription: 'Ivy status',
     fullDescription: 'Ivy status',
     url:
