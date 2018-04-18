@@ -3,8 +3,14 @@ import { OverallStatus } from '../../models';
 
 @Component({
   selector: 'app-ivy-status',
-  templateUrl: './ivy-full-status.component.html',
-  styleUrls: ['./ivy-full-status.component.scss'],
+  template: `
+    <app-ivy-overview
+      [title] = "title"
+      [percentage]="overallStatus.progressPercentage"
+      [nbrCompleted]="overallStatus.nbrFeaturesCompleted"
+      [nbrPending]="overallStatus.nbrFeaturesPending">
+    </app-ivy-overview>
+  `,
 })
 export class IvyFullStatusComponent implements OnInit {
   title = 'Overall status';

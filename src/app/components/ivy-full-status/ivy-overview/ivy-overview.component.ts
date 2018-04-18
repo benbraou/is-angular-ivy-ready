@@ -3,7 +3,23 @@ import { OverallStatus } from '../../../models';
 
 @Component({
   selector: 'app-ivy-overview',
-  templateUrl: './ivy-overview.component.html',
+  template: `
+    <div fxLayout="row wrap" fxLayoutAlign="space-between" class="ivy-overview">
+      <app-stats-summary
+        fxFlex.gt-xs="100"
+        fxFlex.gt-sm="50"
+        [title]="title"
+        [percentage]="percentage"
+        [nbrCompleted]="nbrCompleted"
+        [nbrPending]="nbrPending" >
+      </app-stats-summary>
+      <app-useful-links
+        fxFlex.gt-xs="100"
+        fxFlex.gt-sm="49"
+        fxHide.lt-sm>
+      </app-useful-links>
+    </div>
+  `,
   styleUrls: ['./ivy-overview.component.scss'],
 })
 export class IvyOverviewComponent {
