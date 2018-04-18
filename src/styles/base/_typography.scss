@@ -57,7 +57,11 @@ h6 {
   clear: both;
 }
 
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   @media screen and (max-width: 600px) {
     margin: 8px 0;
   }
@@ -67,18 +71,25 @@ h2, h3, h4, h5, h6 {
   margin-top: 0;
 }
 
-p, ol, ul, ol, li, input, a  {
+p,
+ol,
+ul,
+ol,
+li,
+input,
+a {
   font-size: 14px;
   line-height: 24px;
-  letter-spacing: 0.30px;
+  letter-spacing: 0.3px;
   font-weight: 400;
   & > em {
-    letter-spacing: 0.30px;
+    letter-spacing: 0.3px;
   }
 }
 
 ol {
-  li, p {
+  li,
+  p {
     margin: 4px 0;
   }
 }
@@ -123,7 +134,7 @@ table tbody th {
 td {
   font-weight: 400;
   padding: 8px 30px;
-  letter-spacing: 0.30px;
+  letter-spacing: 0.3px;
 
   p {
     margin: 0;
@@ -137,7 +148,10 @@ th {
   text-align: left;
 }
 
-p > code, li > code, td > code, th > code {
+p > code,
+li > code,
+td > code,
+th > code {
   font-family: $code-font;
   font-size: 85%;
   color: $darkgray;

@@ -3,9 +3,8 @@
 @mixin useful-links-component-theme($theme) {
   $primary: map-get($theme, primary);
 
-
   app-useful-links {
-     > .mat-card {
+    > .mat-card {
       background: mat-color($primary);
       color: white;
       .mat-list-item {

@@ -13,11 +13,11 @@
     "test:no-sourcemaps": "ng test --sourcemaps=false",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "prettier": "prettier --single-quote --trailing-comma es5 --write 'src/**/*.{ts,tsx,json,css}'",
+    "prettier": "prettier --single-quote --trailing-comma es5 --write 'src/**/*.{ts,tsx,json,scss, css}'",
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "src/**/*.{ts,tsx,json,css}": [
+    "src/**/*.{ts,tsx,json,scss, css}": [
       "npm run prettier",
       "git add"
     ]

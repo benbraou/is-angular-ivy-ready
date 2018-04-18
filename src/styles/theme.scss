@@ -5,8 +5,8 @@
 @include mat-core();
 
 $ivy-primary: mat-palette($mat-light-blue, 500, 400, 800);
-$ivy-accent:  mat-palette($mat-red, 700, 600, 800);
-$ivy-warn:    mat-palette($mat-red);
+$ivy-accent: mat-palette($mat-red, 700, 600, 800);
+$ivy-warn: mat-palette($mat-red);
 
 @mixin custom-components-theme($theme) {
   @include stats-summary-component-theme($theme);
