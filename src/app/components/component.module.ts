@@ -1,6 +1,6 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FlexLayoutModule } from '@angular/flex-layout';
+import { FlexLayoutModule, ADD_FLEX_STYLES } from '@angular/flex-layout';
 
 import { MaterialModule } from './material.module';
 import { DirectiveModule } from '../directives/directive.module';
@@ -22,7 +22,7 @@ import { UsefulLinksComponent } from './ivy-full-status/ivy-overview/useful-link
     IvyOverviewComponent,
     UsefulLinksComponent,
   ],
-  providers: [IvyLinksService],
+  providers: [IvyLinksService, { provide: ADD_FLEX_STYLES, useValue: true }],
   exports: [
     IvyFullStatusComponent,
     NavbarComponent,
