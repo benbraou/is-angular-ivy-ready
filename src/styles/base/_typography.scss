@@ -89,6 +89,9 @@ li p {
 
 a {
   text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .app-toolbar a {

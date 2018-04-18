@@ -6,7 +6,7 @@
 
   app-stats-summary {
     .mat-typography {
-      h1 {
+      mat-card-title {
         color: mat-color($primary);
       }
       h3 {

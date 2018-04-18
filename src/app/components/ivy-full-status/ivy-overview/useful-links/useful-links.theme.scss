@@ -1,0 +1,20 @@
+@import '~@angular/material/theming';
+
+@mixin useful-links-component-theme($theme) {
+  $primary: map-get($theme, primary);
+
+
+  app-useful-links {
+     > .mat-card {
+      background: mat-color($primary);
+      color: white;
+      .mat-list-item {
+        height: 30px;
+        color: inherit;
+        a {
+          color: inherit;
+        }
+      }
+    }
+  }
+}
