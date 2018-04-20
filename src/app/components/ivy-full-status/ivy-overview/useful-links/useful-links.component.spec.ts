@@ -1,5 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { MaterialModule } from '../../../material.module';
 import { IvyLinksService } from '../../../../services/ivy-links.service';
 
 import { UsefulLinksComponent } from './useful-links.component';
@@ -18,6 +19,7 @@ describe('UsefulLinksComponent', () => {
     async(() => {
       TestBed.configureTestingModule({
         declarations: [UsefulLinksComponent],
+        imports: [MaterialModule],
         providers: [
           { provide: IvyLinksService, useValue: ivyLinksServiceStub },
         ],

@@ -41,7 +41,7 @@ describe('StatsSummaryComponent', () => {
     );
     expect(cardElement).toBeTruthy();
 
-    const title = cardElement.querySelector('h1');
+    const title = cardElement.querySelector('mat-card-title');
     expect(title).toBeTruthy();
     expect(title.textContent.trim()).toBe('Overall status');
 
