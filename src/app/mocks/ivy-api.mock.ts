@@ -19,6 +19,7 @@ export const IVY_RESPONSE = {
                         name: 'Basic setup of the transformer into `tsc`',
                         status: {
                           completed: false,
+                          categories: null,
                           granularStatuses: [
                             {
                               category: '',
@@ -33,6 +34,7 @@ export const IVY_RESPONSE = {
                         name: 'Can read STORING_METADATA_IN_D.TS from `.d.ts`',
                         status: {
                           completed: false,
+                          categories: null,
                           granularStatuses: [
                             {
                               category: '',
@@ -48,6 +50,7 @@ export const IVY_RESPONSE = {
                           'Detect decorators and convert them to the `defineXXX` method using the `__Compiler` in `@angular/compiler`.',
                         status: {
                           completed: false,
+                          categories: null,
                           granularStatuses: [
                             {
                               category: '',
@@ -61,6 +64,7 @@ export const IVY_RESPONSE = {
                             name: '`@Pipe` =\u003e `definePipe`',
                             status: {
                               completed: false,
+                              categories: null,
                               granularStatuses: [
                                 {
                                   category: '',
@@ -75,6 +79,7 @@ export const IVY_RESPONSE = {
                             name: '`@Component` =\u003e `defineComponent`',
                             status: {
                               completed: false,
+                              categories: null,
                               granularStatuses: [
                                 {
                                   category: '',
@@ -89,6 +94,7 @@ export const IVY_RESPONSE = {
                             name: '`@Directive` =\u003e `defineDirective`',
                             status: {
                               completed: false,
+                              categories: null,
                               granularStatuses: [
                                 {
                                   category: '',
@@ -103,6 +109,7 @@ export const IVY_RESPONSE = {
                             name: '`@NgModule` =\u003e `defineInjector`',
                             status: {
                               completed: false,
+                              categories: null,
                               granularStatuses: [
                                 {
                                   category: '',
@@ -119,6 +126,7 @@ export const IVY_RESPONSE = {
                         name: 'Encode selectors into `.d.ts` file.',
                         status: {
                           completed: false,
+                          categories: null,
                           granularStatuses: [
                             {
                               category: '',
@@ -133,6 +141,7 @@ export const IVY_RESPONSE = {
                               '`@Pipe` =\u003e see [STORING_METADATA_IN_D.TS.md](./STORING_METADATA_IN_D.TS.md)',
                             status: {
                               completed: false,
+                              categories: null,
                               granularStatuses: [
                                 {
                                   category: '',
@@ -148,6 +157,7 @@ export const IVY_RESPONSE = {
                               '`@Component` =\u003e see [STORING_METADATA_IN_D.TS.md](./STORING_METADATA_IN_D.TS.md)',
                             status: {
                               completed: false,
+                              categories: null,
                               granularStatuses: [
                                 {
                                   category: '',
@@ -163,6 +173,7 @@ export const IVY_RESPONSE = {
                               '`@Directive` =\u003e see [STORING_METADATA_IN_D.TS.md](./STORING_METADATA_IN_D.TS.md)',
                             status: {
                               completed: false,
+                              categories: null,
                               granularStatuses: [
                                 {
                                   category: '',
@@ -178,6 +189,7 @@ export const IVY_RESPONSE = {
                               '`@NgModule` =\u003e see [STORING_METADATA_IN_D.TS.md](./STORING_METADATA_IN_D.TS.md)',
                             status: {
                               completed: false,
+                              categories: null,
                               granularStatuses: [
                                 {
                                   category: '',
@@ -195,6 +207,7 @@ export const IVY_RESPONSE = {
                           'support `extends` for `@Pipe`, `@Component`, `@Directive` and `@NgModule`.',
                         status: {
                           completed: false,
+                          categories: null,
                           granularStatuses: [
                             {
                               category: '',
@@ -209,6 +222,7 @@ export const IVY_RESPONSE = {
                         name: 'Documentation',
                         status: {
                           completed: false,
+                          categories: null,
                           granularStatuses: [
                             {
                               category: '',
@@ -231,6 +245,7 @@ export const IVY_RESPONSE = {
                         name: 'Basic setup of stand alone executable',
                         status: {
                           completed: false,
+                          categories: null,
                           granularStatuses: [
                             {
                               category: '',
@@ -245,6 +260,7 @@ export const IVY_RESPONSE = {
                         name: 'Integration with WebPack (cli)',
                         status: {
                           completed: false,
+                          categories: null,
                           granularStatuses: [
                             {
                               category: '',
@@ -260,6 +276,7 @@ export const IVY_RESPONSE = {
                           'Rewrite existing code by interpreting the associated STORING_METADATA_IN_D.TS',
                         status: {
                           completed: false,
+                          categories: null,
                           granularStatuses: [
                             {
                               category: '',
@@ -274,6 +291,7 @@ export const IVY_RESPONSE = {
                               '`PipeCompiler`: `@Pipe` =\u003e `definePipe`',
                             status: {
                               completed: false,
+                              categories: null,
                               granularStatuses: [
                                 {
                                   category: '',
@@ -289,6 +307,7 @@ export const IVY_RESPONSE = {
                               '`DirectiveCompiler`: `@Directive` =\u003e `defineDirective`',
                             status: {
                               completed: false,
+                              categories: null,
                               granularStatuses: [
                                 {
                                   category: '',
@@ -304,6 +323,7 @@ export const IVY_RESPONSE = {
                               '`NgModuleCompiler`: `@NgModule` =\u003e `defineInjector`',
                             status: {
                               completed: false,
+                              categories: null,
                               granularStatuses: [
                                 {
                                   category: '',
@@ -319,6 +339,7 @@ export const IVY_RESPONSE = {
                               '`ComponentCompiler`: `@Component` =\u003e `defineComponent`',
                             status: {
                               completed: false,
+                              categories: null,
                               granularStatuses: [
                                 {
                                   category: '',
@@ -332,6 +353,7 @@ export const IVY_RESPONSE = {
                                 name: '`TemplateCompiler`',
                                 status: {
                                   completed: false,
+                                  categories: null,
                                   granularStatuses: [
                                     {
                                       category: '',
@@ -346,6 +368,7 @@ export const IVY_RESPONSE = {
                                 name: '`StyleCompiler`',
                                 status: {
                                   completed: false,
+                                  categories: null,
                                   granularStatuses: [
                                     {
                                       category: '',
@@ -364,6 +387,7 @@ export const IVY_RESPONSE = {
                         name: 'Documentation',
                         status: {
                           completed: false,
+                          categories: null,
                           granularStatuses: [
                             {
                               category: '',
@@ -389,6 +413,7 @@ export const IVY_RESPONSE = {
                       'Component compilation: Translates `@Component` =\u003e `defineComponent`',
                     status: {
                       completed: false,
+                      categories: null,
                       granularStatuses: [
                         {
                           category: '',
@@ -403,6 +428,7 @@ export const IVY_RESPONSE = {
                           '`TemplateCompiler` (current known as `ViewCompiler`)',
                         status: {
                           completed: false,
+                          categories: null,
                           granularStatuses: [
                             {
                               category: '',
@@ -417,6 +443,7 @@ export const IVY_RESPONSE = {
                         name: '`StyleCompiler`',
                         status: {
                           completed: false,
+                          categories: null,
                           granularStatuses: [
                             {
                               category: '',
@@ -434,6 +461,7 @@ export const IVY_RESPONSE = {
                       '`PipeCompiler`: Translates `@Pipe` =\u003e `definePipe`',
                     status: {
                       completed: false,
+                      categories: null,
                       granularStatuses: [
                         {
                           category: '',
@@ -449,6 +477,7 @@ export const IVY_RESPONSE = {
                       '`DirectiveCompiler`: Translates `@Directive` =\u003e `defineDirective`',
                     status: {
                       completed: false,
+                      categories: null,
                       granularStatuses: [
                         {
                           category: '',
@@ -464,6 +493,7 @@ export const IVY_RESPONSE = {
                       '`InjectableCompiler`: Translates `@Injectable` =\u003e `defineInjectable`',
                     status: {
                       completed: false,
+                      categories: null,
                       granularStatuses: [
                         {
                           category: '',
@@ -479,6 +509,7 @@ export const IVY_RESPONSE = {
                       '`NgModuleCompiler`: Translates `@NgModule` =\u003e `defineInjector` (and `defineNgModule` only in jit)',
                     status: {
                       completed: false,
+                      categories: null,
                       granularStatuses: [
                         {
                           category: '',
@@ -493,6 +524,7 @@ export const IVY_RESPONSE = {
                     name: 'Documentation',
                     status: {
                       completed: false,
+                      categories: null,
                       granularStatuses: [
                         {
                           category: '',
@@ -516,6 +548,7 @@ export const IVY_RESPONSE = {
                       'Remove `createDecorator` (and friends) since we no longer support other modes.',
                     status: {
                       completed: false,
+                      categories: null,
                       granularStatuses: [
                         {
                           category: '',
@@ -530,6 +563,7 @@ export const IVY_RESPONSE = {
                     name: '`@angular/compiler` can patch itself onto:',
                     status: {
                       completed: false,
+                      categories: null,
                       granularStatuses: [
                         {
                           category: '',
@@ -543,6 +577,7 @@ export const IVY_RESPONSE = {
                         name: '`@Injectable`',
                         status: {
                           completed: false,
+                          categories: null,
                           granularStatuses: [
                             {
                               category: '',
@@ -557,6 +592,7 @@ export const IVY_RESPONSE = {
                         name: '`@NgModule`',
                         status: {
                           completed: false,
+                          categories: null,
                           granularStatuses: [
                             {
                               category: '',
@@ -571,6 +607,7 @@ export const IVY_RESPONSE = {
                         name: '`@Pipe`',
                         status: {
                           completed: false,
+                          categories: null,
                           granularStatuses: [
                             {
                               category: '',
@@ -585,6 +622,7 @@ export const IVY_RESPONSE = {
                         name: '`@Directive`',
                         status: {
                           completed: false,
+                          categories: null,
                           granularStatuses: [
                             {
                               category: '',
@@ -599,6 +637,7 @@ export const IVY_RESPONSE = {
                         name: '`@Component`',
                         status: {
                           completed: false,
+                          categories: null,
                           granularStatuses: [
                             {
                               category: '',
@@ -612,9 +651,10 @@ export const IVY_RESPONSE = {
                     ],
                   },
                   {
-                    name: '`ResourceLoader.resolved',
+                    name: '`ResourceLoader.resolved: Promise\u003c\u003e`',
                     status: {
                       completed: false,
+                      categories: null,
                       granularStatuses: [
                         {
                           category: '',
@@ -632,25 +672,6 @@ export const IVY_RESPONSE = {
           ],
         },
         {
-          data: {
-            name: 'Testing / Debugging',
-            features: [
-              {
-                name:
-                  'in debug mode publish components into DOM nodes for easier debugging.',
-                status: {
-                  completed: false,
-                  granularStatuses: [
-                    { category: '', code: 'NOT_IMPLEMENTED', description: '' },
-                  ],
-                },
-                childFeatures: null,
-              },
-            ],
-          },
-          featureGroups: null,
-        },
-        {
           data: { name: 'Crosscutting', features: [] },
           featureGroups: [
             {
@@ -661,6 +682,14 @@ export const IVY_RESPONSE = {
                     name: '`@Component`',
                     status: {
                       completed: false,
+                      categories: [
+                        'Annotation',
+                        '`defineXXX()`',
+                        'Run time',
+                        'Spec',
+                        'Compiler',
+                        'Back Patch',
+                      ],
                       granularStatuses: [
                         {
                           category: '`defineComponent()`',
@@ -695,6 +724,14 @@ export const IVY_RESPONSE = {
                     name: '`@Directive`',
                     status: {
                       completed: false,
+                      categories: [
+                        'Annotation',
+                        '`defineXXX()`',
+                        'Run time',
+                        'Spec',
+                        'Compiler',
+                        'Back Patch',
+                      ],
                       granularStatuses: [
                         {
                           category: '`defineDirective()`',
@@ -729,6 +766,14 @@ export const IVY_RESPONSE = {
                     name: '`@Directive`',
                     status: {
                       completed: false,
+                      categories: [
+                        'Annotation',
+                        '`defineXXX()`',
+                        'Run time',
+                        'Spec',
+                        'Compiler',
+                        'Back Patch',
+                      ],
                       granularStatuses: [
                         {
                           category: '`defineAbstractDirective()`',
@@ -763,6 +808,14 @@ export const IVY_RESPONSE = {
                     name: '`@Pipe`',
                     status: {
                       completed: false,
+                      categories: [
+                        'Annotation',
+                        '`defineXXX()`',
+                        'Run time',
+                        'Spec',
+                        'Compiler',
+                        'Back Patch',
+                      ],
                       granularStatuses: [
                         {
                           category: '`definePipe()`',
@@ -797,6 +850,14 @@ export const IVY_RESPONSE = {
                     name: '`@Injectable`',
                     status: {
                       completed: false,
+                      categories: [
+                        'Annotation',
+                        '`defineXXX()`',
+                        'Run time',
+                        'Spec',
+                        'Compiler',
+                        'Back Patch',
+                      ],
                       granularStatuses: [
                         {
                           category: '`defineInjectable()`',
@@ -831,6 +892,14 @@ export const IVY_RESPONSE = {
                     name: '`@NgModule`',
                     status: {
                       completed: false,
+                      categories: [
+                        'Annotation',
+                        '`defineXXX()`',
+                        'Run time',
+                        'Spec',
+                        'Compiler',
+                        'Back Patch',
+                      ],
                       granularStatuses: [
                         {
                           category: '`defineInjector()`',
@@ -865,6 +934,14 @@ export const IVY_RESPONSE = {
                     name: '`@ConfigureInjector`',
                     status: {
                       completed: false,
+                      categories: [
+                        'Annotation',
+                        '`defineXXX()`',
+                        'Run time',
+                        'Spec',
+                        'Compiler',
+                        'Back Patch',
+                      ],
                       granularStatuses: [
                         {
                           category: '`defineInjector()`',
@@ -907,6 +984,7 @@ export const IVY_RESPONSE = {
                     name: 'creation reordering based on injection',
                     status: {
                       completed: false,
+                      categories: ['Feature', 'Runtime', 'Spec', 'Compiler'],
                       granularStatuses: [
                         {
                           category: 'Runtime',
@@ -931,6 +1009,7 @@ export const IVY_RESPONSE = {
                     name: '`class CompA extends CompB {}`',
                     status: {
                       completed: false,
+                      categories: ['Feature', 'Runtime', 'Spec', 'Compiler'],
                       granularStatuses: [
                         {
                           category: 'Runtime',
@@ -955,6 +1034,7 @@ export const IVY_RESPONSE = {
                     name: '`class CompA extends CompB { @Input }`',
                     status: {
                       completed: false,
+                      categories: ['Feature', 'Runtime', 'Spec', 'Compiler'],
                       granularStatuses: [
                         {
                           category: 'Runtime',
@@ -979,6 +1059,7 @@ export const IVY_RESPONSE = {
                     name: '`class CompA extends CompB { @Output }`',
                     status: {
                       completed: false,
+                      categories: ['Feature', 'Runtime', 'Spec', 'Compiler'],
                       granularStatuses: [
                         {
                           category: 'Runtime',
@@ -1011,6 +1092,7 @@ export const IVY_RESPONSE = {
                     name: '`markDirty()`',
                     status: {
                       completed: true,
+                      categories: ['Feature', 'Runtime'],
                       granularStatuses: [
                         {
                           category: 'Runtime',
@@ -1025,6 +1107,7 @@ export const IVY_RESPONSE = {
                     name: '`detectChanges()`',
                     status: {
                       completed: true,
+                      categories: ['Feature', 'Runtime'],
                       granularStatuses: [
                         {
                           category: 'Runtime',
@@ -1039,6 +1122,7 @@ export const IVY_RESPONSE = {
                     name: '`tick()`',
                     status: {
                       completed: true,
+                      categories: ['Feature', 'Runtime'],
                       granularStatuses: [
                         {
                           category: 'Runtime',
@@ -1053,6 +1137,7 @@ export const IVY_RESPONSE = {
                     name: '`attach()`',
                     status: {
                       completed: true,
+                      categories: ['Feature', 'Runtime'],
                       granularStatuses: [
                         {
                           category: 'Runtime',
@@ -1067,6 +1152,7 @@ export const IVY_RESPONSE = {
                     name: '`detach()`',
                     status: {
                       completed: true,
+                      categories: ['Feature', 'Runtime'],
                       granularStatuses: [
                         {
                           category: 'Runtime',
@@ -1081,6 +1167,7 @@ export const IVY_RESPONSE = {
                     name: '`ON_PUSH`',
                     status: {
                       completed: true,
+                      categories: ['Feature', 'Runtime'],
                       granularStatuses: [
                         {
                           category: 'Runtime',
@@ -1095,6 +1182,7 @@ export const IVY_RESPONSE = {
                     name: '`ALWAYS`',
                     status: {
                       completed: true,
+                      categories: ['Feature', 'Runtime'],
                       granularStatuses: [
                         {
                           category: 'Runtime',
@@ -1109,6 +1197,7 @@ export const IVY_RESPONSE = {
                     name: '`DIRTY`',
                     status: {
                       completed: true,
+                      categories: ['Feature', 'Runtime'],
                       granularStatuses: [
                         {
                           category: 'Runtime',
@@ -1123,6 +1212,7 @@ export const IVY_RESPONSE = {
                     name: '`ATTACHED`',
                     status: {
                       completed: true,
+                      categories: ['Feature', 'Runtime'],
                       granularStatuses: [
                         {
                           category: 'Runtime',
@@ -1145,6 +1235,7 @@ export const IVY_RESPONSE = {
                     name: '`renderComponent()`',
                     status: {
                       completed: true,
+                      categories: ['Feature', 'Runtime'],
                       granularStatuses: [
                         {
                           category: 'Runtime',
@@ -1159,6 +1250,7 @@ export const IVY_RESPONSE = {
                     name: '`getHostElement()`',
                     status: {
                       completed: true,
+                      categories: ['Feature', 'Runtime'],
                       granularStatuses: [
                         {
                           category: 'Runtime',
@@ -1173,6 +1265,7 @@ export const IVY_RESPONSE = {
                     name: '`createInjector()`',
                     status: {
                       completed: true,
+                      categories: ['Feature', 'Runtime'],
                       granularStatuses: [
                         {
                           category: 'Runtime',
@@ -1198,6 +1291,12 @@ export const IVY_RESPONSE = {
                         name: '`\u003cdiv\u003e`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -1222,6 +1321,12 @@ export const IVY_RESPONSE = {
                         name: '`\u003cdiv\u003e{{exp}}\u003c/div\u003e`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -1246,6 +1351,12 @@ export const IVY_RESPONSE = {
                         name: '`\u003cdiv attr=value\u003e`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -1270,6 +1381,12 @@ export const IVY_RESPONSE = {
                         name: '`\u003cdiv (click)="stmt"\u003e`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -1294,6 +1411,12 @@ export const IVY_RESPONSE = {
                         name: '`\u003cdiv #foo\u003e`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -1318,6 +1441,12 @@ export const IVY_RESPONSE = {
                         name: '`\u003cdiv #foo="bar"\u003e`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -1342,6 +1471,12 @@ export const IVY_RESPONSE = {
                         name: '`\u003cdiv [value]="exp"\u003e`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -1366,6 +1501,12 @@ export const IVY_RESPONSE = {
                         name: '`\u003cdiv title="Hello {{name}}!"\u003e`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -1390,6 +1531,12 @@ export const IVY_RESPONSE = {
                         name: '`\u003cdiv [attr.value]="exp"\u003e`',
                         status: {
                           completed: false,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -1414,6 +1561,12 @@ export const IVY_RESPONSE = {
                         name: '`\u003cdiv class="literal"\u003e`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -1438,6 +1591,12 @@ export const IVY_RESPONSE = {
                         name: '`\u003cdiv [class]="exp"\u003e`',
                         status: {
                           completed: false,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -1462,6 +1621,12 @@ export const IVY_RESPONSE = {
                         name: '`\u003cdiv [class.foo]="exp"\u003e`',
                         status: {
                           completed: false,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -1486,6 +1651,12 @@ export const IVY_RESPONSE = {
                         name: '`\u003cdiv style="literal"\u003e`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -1510,6 +1681,12 @@ export const IVY_RESPONSE = {
                         name: '`\u003cdiv [style]="exp"\u003e`',
                         status: {
                           completed: false,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -1534,6 +1711,12 @@ export const IVY_RESPONSE = {
                         name: '`\u003cdiv [style.foo]="exp"\u003e`',
                         status: {
                           completed: false,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -1555,9 +1738,15 @@ export const IVY_RESPONSE = {
                         childFeatures: null,
                       },
                       {
-                        name: '`{{ [literal, exp ] }}`',
+                        name: 'literal',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -1579,9 +1768,15 @@ export const IVY_RESPONSE = {
                         childFeatures: null,
                       },
                       {
-                        name: '{{ { a: literal, b: exp } }}',
+                        name: 'literal',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -1606,6 +1801,12 @@ export const IVY_RESPONSE = {
                         name: '`{{ exp \\| pipe: arg }}`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -1630,6 +1831,12 @@ export const IVY_RESPONSE = {
                         name: '`\u003csvg:g svg:p\u003e`',
                         status: {
                           completed: false,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -1654,102 +1861,12 @@ export const IVY_RESPONSE = {
                         name: '`\u003cimg src=[userData]\u003e` sanitization',
                         status: {
                           completed: false,
-                          granularStatuses: [
-                            {
-                              category: 'Runtime',
-                              code: 'NOT_IMPLEMENTED',
-                              description: '',
-                            },
-                            {
-                              category: 'Spec',
-                              code: 'NOT_IMPLEMENTED',
-                              description: '',
-                            },
-                            {
-                              category: 'Compiler',
-                              code: 'NOT_IMPLEMENTED',
-                              description: '',
-                            },
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
                           ],
-                        },
-                        childFeatures: null,
-                      },
-                      {
-                        name: '`\u003cdiv (nocd.click)\u003e`',
-                        status: {
-                          completed: false,
-                          granularStatuses: [
-                            {
-                              category: 'Runtime',
-                              code: 'NOT_IMPLEMENTED',
-                              description: '',
-                            },
-                            {
-                              category: 'Spec',
-                              code: 'NOT_IMPLEMENTED',
-                              description: '',
-                            },
-                            {
-                              category: 'Compiler',
-                              code: 'NOT_IMPLEMENTED',
-                              description: '',
-                            },
-                          ],
-                        },
-                        childFeatures: null,
-                      },
-                      {
-                        name: '`\u003cdiv (bubble.click)\u003e`',
-                        status: {
-                          completed: false,
-                          granularStatuses: [
-                            {
-                              category: 'Runtime',
-                              code: 'NOT_IMPLEMENTED',
-                              description: '',
-                            },
-                            {
-                              category: 'Spec',
-                              code: 'NOT_IMPLEMENTED',
-                              description: '',
-                            },
-                            {
-                              category: 'Compiler',
-                              code: 'NOT_IMPLEMENTED',
-                              description: '',
-                            },
-                          ],
-                        },
-                        childFeatures: null,
-                      },
-                      {
-                        name: '`\u003cdiv (keyup.enter)\u003e`',
-                        status: {
-                          completed: false,
-                          granularStatuses: [
-                            {
-                              category: 'Runtime',
-                              code: 'NOT_IMPLEMENTED',
-                              description: '',
-                            },
-                            {
-                              category: 'Spec',
-                              code: 'NOT_IMPLEMENTED',
-                              description: '',
-                            },
-                            {
-                              category: 'Compiler',
-                              code: 'NOT_IMPLEMENTED',
-                              description: '',
-                            },
-                          ],
-                        },
-                        childFeatures: null,
-                      },
-                      {
-                        name: '`\u003cdiv (hammer.js)\u003e`',
-                        status: {
-                          completed: false,
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -1782,6 +1899,12 @@ export const IVY_RESPONSE = {
                         name: '`onChanges()`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -1806,6 +1929,12 @@ export const IVY_RESPONSE = {
                         name: '`onDestroy()`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -1830,6 +1959,12 @@ export const IVY_RESPONSE = {
                         name: '`onInit()`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -1854,6 +1989,12 @@ export const IVY_RESPONSE = {
                         name: '`onChanges()`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -1878,6 +2019,12 @@ export const IVY_RESPONSE = {
                         name: '`doCheck()`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -1902,6 +2049,12 @@ export const IVY_RESPONSE = {
                         name: '`afterViewChecked()`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -1926,6 +2079,12 @@ export const IVY_RESPONSE = {
                         name: '`afterViewInit()`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -1950,6 +2109,12 @@ export const IVY_RESPONSE = {
                         name: '`afterContentChecked()`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -1974,6 +2139,12 @@ export const IVY_RESPONSE = {
                         name: '`afterContentInit()`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -1998,6 +2169,12 @@ export const IVY_RESPONSE = {
                         name: 'listener teardown',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -2030,6 +2207,12 @@ export const IVY_RESPONSE = {
                         name: '`@Query(descendants)`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -2054,6 +2237,12 @@ export const IVY_RESPONSE = {
                         name: '`@Query(one)`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -2078,6 +2267,12 @@ export const IVY_RESPONSE = {
                         name: '`@Query(read)`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -2102,6 +2297,12 @@ export const IVY_RESPONSE = {
                         name: '`@Query(selector)`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -2126,6 +2327,12 @@ export const IVY_RESPONSE = {
                         name: '`@Query(Type)`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -2150,6 +2357,12 @@ export const IVY_RESPONSE = {
                         name: '`@ContentChildred`',
                         status: {
                           completed: false,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -2174,6 +2387,12 @@ export const IVY_RESPONSE = {
                         name: '`@ContentChild`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -2198,6 +2417,12 @@ export const IVY_RESPONSE = {
                         name: '`@ViewChildren`',
                         status: {
                           completed: false,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -2222,6 +2447,12 @@ export const IVY_RESPONSE = {
                         name: '`@ViewChild`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -2254,6 +2485,12 @@ export const IVY_RESPONSE = {
                         name: '`\u003cng-content\u003e`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -2278,6 +2515,12 @@ export const IVY_RESPONSE = {
                         name: '`\u003cng-content selector="..."\u003e`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -2302,6 +2545,12 @@ export const IVY_RESPONSE = {
                         name: 'container `projectAs`',
                         status: {
                           completed: false,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -2334,6 +2583,12 @@ export const IVY_RESPONSE = {
                         name: '`inject(Type)`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -2358,6 +2613,12 @@ export const IVY_RESPONSE = {
                         name: '`directiveInject(Type)`',
                         status: {
                           completed: false,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -2382,6 +2643,12 @@ export const IVY_RESPONSE = {
                         name: '`inject(Type, SkipSelf)`',
                         status: {
                           completed: false,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -2403,9 +2670,15 @@ export const IVY_RESPONSE = {
                         childFeatures: null,
                       },
                       {
-                        name: 'attribute: name',
+                        name: 'name',
                         status: {
                           completed: false,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -2430,6 +2703,12 @@ export const IVY_RESPONSE = {
                         name: '`injectChangeDetectionRef()`',
                         status: {
                           completed: false,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -2454,6 +2733,12 @@ export const IVY_RESPONSE = {
                         name: '`injectElementRef()`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -2478,6 +2763,12 @@ export const IVY_RESPONSE = {
                         name: '`injectViewContainerRef()`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -2502,6 +2793,12 @@ export const IVY_RESPONSE = {
                         name: '`injectTemplateRef()`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -2526,6 +2823,12 @@ export const IVY_RESPONSE = {
                         name: 'default `inject()` with no injector',
                         status: {
                           completed: false,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -2550,6 +2853,12 @@ export const IVY_RESPONSE = {
                         name: 'sanitization with no injector',
                         status: {
                           completed: false,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -2582,6 +2891,12 @@ export const IVY_RESPONSE = {
                         name: 'translate text literals',
                         status: {
                           completed: false,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -2606,6 +2921,12 @@ export const IVY_RESPONSE = {
                         name: 'rearrange text nodes',
                         status: {
                           completed: false,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -2630,6 +2951,12 @@ export const IVY_RESPONSE = {
                         name: 'ICU',
                         status: {
                           completed: false,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -2662,6 +2989,12 @@ export const IVY_RESPONSE = {
                         name: 'Render3.None',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -2686,6 +3019,12 @@ export const IVY_RESPONSE = {
                         name: 'Render2.None',
                         status: {
                           completed: true,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -2710,6 +3049,12 @@ export const IVY_RESPONSE = {
                         name: 'Render2.Emulated',
                         status: {
                           completed: false,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -2734,6 +3079,12 @@ export const IVY_RESPONSE = {
                         name: 'Render2.Native',
                         status: {
                           completed: false,
+                          categories: [
+                            'Feature',
+                            'Runtime',
+                            'Spec',
+                            'Compiler',
+                          ],
                           granularStatuses: [
                             {
                               category: 'Runtime',
@@ -2766,6 +3117,15 @@ export const IVY_RESPONSE = {
                         name: '`clear()`',
                         status: {
                           completed: false,
+                          categories: [
+                            'Method',
+                            'View Container Ref',
+                            'Template Ref',
+                            'Embeded View Ref',
+                            'View Ref',
+                            'Element Ref',
+                            'Change Detection Ref',
+                          ],
                           granularStatuses: [
                             {
                               category: 'View Container Ref',
@@ -2805,6 +3165,15 @@ export const IVY_RESPONSE = {
                         name: '`get()`',
                         status: {
                           completed: false,
+                          categories: [
+                            'Method',
+                            'View Container Ref',
+                            'Template Ref',
+                            'Embeded View Ref',
+                            'View Ref',
+                            'Element Ref',
+                            'Change Detection Ref',
+                          ],
                           granularStatuses: [
                             {
                               category: 'View Container Ref',
@@ -2844,6 +3213,15 @@ export const IVY_RESPONSE = {
                         name: '`createEmbededView()`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Method',
+                            'View Container Ref',
+                            'Template Ref',
+                            'Embeded View Ref',
+                            'View Ref',
+                            'Element Ref',
+                            'Change Detection Ref',
+                          ],
                           granularStatuses: [
                             {
                               category: 'View Container Ref',
@@ -2883,6 +3261,15 @@ export const IVY_RESPONSE = {
                         name: '`createComponent()`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Method',
+                            'View Container Ref',
+                            'Template Ref',
+                            'Embeded View Ref',
+                            'View Ref',
+                            'Element Ref',
+                            'Change Detection Ref',
+                          ],
                           granularStatuses: [
                             {
                               category: 'View Container Ref',
@@ -2922,6 +3309,15 @@ export const IVY_RESPONSE = {
                         name: '`insert()`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Method',
+                            'View Container Ref',
+                            'Template Ref',
+                            'Embeded View Ref',
+                            'View Ref',
+                            'Element Ref',
+                            'Change Detection Ref',
+                          ],
                           granularStatuses: [
                             {
                               category: 'View Container Ref',
@@ -2961,6 +3357,15 @@ export const IVY_RESPONSE = {
                         name: '`move()`',
                         status: {
                           completed: false,
+                          categories: [
+                            'Method',
+                            'View Container Ref',
+                            'Template Ref',
+                            'Embeded View Ref',
+                            'View Ref',
+                            'Element Ref',
+                            'Change Detection Ref',
+                          ],
                           granularStatuses: [
                             {
                               category: 'View Container Ref',
@@ -3000,6 +3405,15 @@ export const IVY_RESPONSE = {
                         name: '`indexOf()`',
                         status: {
                           completed: false,
+                          categories: [
+                            'Method',
+                            'View Container Ref',
+                            'Template Ref',
+                            'Embeded View Ref',
+                            'View Ref',
+                            'Element Ref',
+                            'Change Detection Ref',
+                          ],
                           granularStatuses: [
                             {
                               category: 'View Container Ref',
@@ -3039,6 +3453,15 @@ export const IVY_RESPONSE = {
                         name: '`destroy()`',
                         status: {
                           completed: false,
+                          categories: [
+                            'Method',
+                            'View Container Ref',
+                            'Template Ref',
+                            'Embeded View Ref',
+                            'View Ref',
+                            'Element Ref',
+                            'Change Detection Ref',
+                          ],
                           granularStatuses: [
                             {
                               category: 'View Container Ref',
@@ -3078,6 +3501,15 @@ export const IVY_RESPONSE = {
                         name: '`destroyed`',
                         status: {
                           completed: false,
+                          categories: [
+                            'Method',
+                            'View Container Ref',
+                            'Template Ref',
+                            'Embeded View Ref',
+                            'View Ref',
+                            'Element Ref',
+                            'Change Detection Ref',
+                          ],
                           granularStatuses: [
                             {
                               category: 'View Container Ref',
@@ -3117,6 +3549,15 @@ export const IVY_RESPONSE = {
                         name: '`onDestroy()`',
                         status: {
                           completed: false,
+                          categories: [
+                            'Method',
+                            'View Container Ref',
+                            'Template Ref',
+                            'Embeded View Ref',
+                            'View Ref',
+                            'Element Ref',
+                            'Change Detection Ref',
+                          ],
                           granularStatuses: [
                             {
                               category: 'View Container Ref',
@@ -3156,6 +3597,15 @@ export const IVY_RESPONSE = {
                         name: '`markForCheck()`',
                         status: {
                           completed: false,
+                          categories: [
+                            'Method',
+                            'View Container Ref',
+                            'Template Ref',
+                            'Embeded View Ref',
+                            'View Ref',
+                            'Element Ref',
+                            'Change Detection Ref',
+                          ],
                           granularStatuses: [
                             {
                               category: 'View Container Ref',
@@ -3195,6 +3645,15 @@ export const IVY_RESPONSE = {
                         name: '`detach()`',
                         status: {
                           completed: false,
+                          categories: [
+                            'Method',
+                            'View Container Ref',
+                            'Template Ref',
+                            'Embeded View Ref',
+                            'View Ref',
+                            'Element Ref',
+                            'Change Detection Ref',
+                          ],
                           granularStatuses: [
                             {
                               category: 'View Container Ref',
@@ -3234,6 +3693,15 @@ export const IVY_RESPONSE = {
                         name: '`detachChanges()`',
                         status: {
                           completed: false,
+                          categories: [
+                            'Method',
+                            'View Container Ref',
+                            'Template Ref',
+                            'Embeded View Ref',
+                            'View Ref',
+                            'Element Ref',
+                            'Change Detection Ref',
+                          ],
                           granularStatuses: [
                             {
                               category: 'View Container Ref',
@@ -3273,6 +3741,15 @@ export const IVY_RESPONSE = {
                         name: '`checkNoChanges()`',
                         status: {
                           completed: false,
+                          categories: [
+                            'Method',
+                            'View Container Ref',
+                            'Template Ref',
+                            'Embeded View Ref',
+                            'View Ref',
+                            'Element Ref',
+                            'Change Detection Ref',
+                          ],
                           granularStatuses: [
                             {
                               category: 'View Container Ref',
@@ -3312,6 +3789,15 @@ export const IVY_RESPONSE = {
                         name: '`reattach()`',
                         status: {
                           completed: false,
+                          categories: [
+                            'Method',
+                            'View Container Ref',
+                            'Template Ref',
+                            'Embeded View Ref',
+                            'View Ref',
+                            'Element Ref',
+                            'Change Detection Ref',
+                          ],
                           granularStatuses: [
                             {
                               category: 'View Container Ref',
@@ -3351,6 +3837,15 @@ export const IVY_RESPONSE = {
                         name: '`nativeElement()`',
                         status: {
                           completed: true,
+                          categories: [
+                            'Method',
+                            'View Container Ref',
+                            'Template Ref',
+                            'Embeded View Ref',
+                            'View Ref',
+                            'Element Ref',
+                            'Change Detection Ref',
+                          ],
                           granularStatuses: [
                             {
                               category: 'View Container Ref',

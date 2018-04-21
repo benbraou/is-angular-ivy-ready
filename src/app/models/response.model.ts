@@ -33,11 +33,12 @@ export class FeatureGroupData {
 export class Feature {
   name: string;
   status: FeatureStatus;
-  childFeatures: Feature[];
+  childFeatures?: Feature[];
 }
 
 export class FeatureStatus {
   completed: boolean;
+  categories?: string[];
   granularStatuses: GranularStatus[];
 }
 
