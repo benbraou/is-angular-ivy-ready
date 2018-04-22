@@ -10,8 +10,11 @@ export function tableFeatureFactory(
   return { ...TABLE_FEATURES[featureId] };
 }
 
-export function tableFeaturesFactory(): Feature[] {
-  return [...TABLE_FEATURES];
+export function tableFeaturesFactory() {
+  return {
+    features: [...TABLE_FEATURES],
+    elementData: [...ELEMENT_DATA],
+  };
 }
 
 const NOT_TABLE_FEATURE: Feature = {
@@ -322,5 +325,176 @@ const TABLE_FEATURES = [
       ],
     },
     childFeatures: null,
+  },
+];
+
+const ELEMENT_DATA = [
+  {
+    Annotation: { category: 'Annotation', code: '`@Component`' },
+    '`defineXXX()`': {
+      category: '`defineXXX()`',
+      code: 'IMPLEMENTED',
+      description: '`defineComponent()`',
+    },
+    'Run time': {
+      category: 'Run time',
+      code: 'IMPLEMENTED',
+      description: 'Run time',
+    },
+    Spec: { category: 'Spec', code: 'IMPLEMENTED', description: 'Spec' },
+    Compiler: {
+      category: 'Compiler',
+      code: 'IMPLEMENTED',
+      description: 'Compiler',
+    },
+    'Back Patch': {
+      category: 'Back Patch',
+      code: 'NOT_IMPLEMENTED',
+      description: 'Back Patch',
+    },
+  },
+  {
+    Annotation: { category: 'Annotation', code: '`@Directive`' },
+    '`defineXXX()`': {
+      category: '`defineXXX()`',
+      code: 'IMPLEMENTED',
+      description: '`defineDirective()`',
+    },
+    'Run time': {
+      category: 'Run time',
+      code: 'IMPLEMENTED',
+      description: 'Run time',
+    },
+    Spec: { category: 'Spec', code: 'IMPLEMENTED', description: 'Spec' },
+    Compiler: {
+      category: 'Compiler',
+      code: 'IMPLEMENTED',
+      description: 'Compiler',
+    },
+    'Back Patch': {
+      category: 'Back Patch',
+      code: 'NOT_IMPLEMENTED',
+      description: 'Back Patch',
+    },
+  },
+  {
+    Annotation: { category: 'Annotation', code: '`@Directive`' },
+    '`defineXXX()`': {
+      category: '`defineXXX()`',
+      code: 'NOT_IMPLEMENTED',
+      description: '`defineAbstractDirective()`',
+    },
+    'Run time': {
+      category: 'Run time',
+      code: 'NOT_IMPLEMENTED',
+      description: 'Run time',
+    },
+    Spec: { category: 'Spec', code: 'NOT_IMPLEMENTED', description: 'Spec' },
+    Compiler: {
+      category: 'Compiler',
+      code: 'NOT_IMPLEMENTED',
+      description: 'Compiler',
+    },
+    'Back Patch': {
+      category: 'Back Patch',
+      code: 'NOT_IMPLEMENTED',
+      description: 'Back Patch',
+    },
+  },
+  {
+    Annotation: { category: 'Annotation', code: '`@Pipe`' },
+    '`defineXXX()`': {
+      category: '`defineXXX()`',
+      code: 'IMPLEMENTED',
+      description: '`definePipe()`',
+    },
+    'Run time': {
+      category: 'Run time',
+      code: 'IMPLEMENTED',
+      description: 'Run time',
+    },
+    Spec: { category: 'Spec', code: 'IMPLEMENTED', description: 'Spec' },
+    Compiler: {
+      category: 'Compiler',
+      code: 'IMPLEMENTED',
+      description: 'Compiler',
+    },
+    'Back Patch': {
+      category: 'Back Patch',
+      code: 'NOT_IMPLEMENTED',
+      description: 'Back Patch',
+    },
+  },
+  {
+    Annotation: { category: 'Annotation', code: '`@Injectable`' },
+    '`defineXXX()`': {
+      category: '`defineXXX()`',
+      code: 'IMPLEMENTED',
+      description: '`defineInjectable()`',
+    },
+    'Run time': {
+      category: 'Run time',
+      code: 'IMPLEMENTED',
+      description: 'Run time',
+    },
+    Spec: { category: 'Spec', code: 'NOT_IMPLEMENTED', description: 'Spec' },
+    Compiler: {
+      category: 'Compiler',
+      code: 'NOT_IMPLEMENTED',
+      description: 'Compiler',
+    },
+    'Back Patch': {
+      category: 'Back Patch',
+      code: 'NOT_IMPLEMENTED',
+      description: 'Back Patch',
+    },
+  },
+  {
+    Annotation: { category: 'Annotation', code: '`@NgModule`' },
+    '`defineXXX()`': {
+      category: '`defineXXX()`',
+      code: 'IMPLEMENTED',
+      description: '`defineInjector()`',
+    },
+    'Run time': {
+      category: 'Run time',
+      code: 'IMPLEMENTED',
+      description: 'Run time',
+    },
+    Spec: { category: 'Spec', code: 'NOT_IMPLEMENTED', description: 'Spec' },
+    Compiler: {
+      category: 'Compiler',
+      code: 'NOT_IMPLEMENTED',
+      description: 'Compiler',
+    },
+    'Back Patch': {
+      category: 'Back Patch',
+      code: 'NOT_IMPLEMENTED',
+      description: 'Back Patch',
+    },
+  },
+  {
+    Annotation: { category: 'Annotation', code: '`@ConfigureInjector`' },
+    '`defineXXX()`': {
+      category: '`defineXXX()`',
+      code: 'NOT_IMPLEMENTED',
+      description: '`defineInjector()`',
+    },
+    'Run time': {
+      category: 'Run time',
+      code: 'NOT_IMPLEMENTED',
+      description: 'Run time',
+    },
+    Spec: { category: 'Spec', code: 'NOT_IMPLEMENTED', description: 'Spec' },
+    Compiler: {
+      category: 'Compiler',
+      code: 'NOT_IMPLEMENTED',
+      description: 'Compiler',
+    },
+    'Back Patch': {
+      category: 'Back Patch',
+      code: 'NOT_IMPLEMENTED',
+      description: 'Back Patch',
+    },
   },
 ];
