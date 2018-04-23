@@ -2,3 +2,7 @@ mat-sidenav-content {
   background-color: $lightgray;
   padding: 20px;
 }
+mat-sidenav-container {
+  max-width: 1000px;
+  margin: auto;
+}
