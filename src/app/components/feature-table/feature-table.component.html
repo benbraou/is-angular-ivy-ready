@@ -1,0 +1,45 @@
+<div fxHide.lt-md class="mat-elevation-z1">
+  <mat-form-field>
+    <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+  </mat-form-field>
+  <mat-table #table [dataSource]="dataSource">
+    <ng-container *ngFor="let cat of displayedColumns" matColumnDef={{cat}}>
+      <ng-container *ngIf="elementData[0][cat].description === elementData[0][cat].category">
+          <mat-header-cell *matHeaderCellDef fxFlex="0 0 75px"> {{cat}} </mat-header-cell>
+      </ng-container>
+
+      <ng-container *ngIf="elementData[0][cat].description !== elementData[0][cat].category">
+          <mat-header-cell *matHeaderCellDef> {{cat}} </mat-header-cell>
+      </ng-container>
+      <ng-container *matCellDef="let element">
+        <mat-cell fxFlex="0 0 75px" *ngIf="element[cat].description === element[cat].category">
+          <app-granular-status [status]="element[cat]"></app-granular-status>
+        </mat-cell>
+        <mat-cell *ngIf="element[cat].description !== element[cat].category">
+          <app-granular-status [status]="element[cat]"></app-granular-status>
+        </mat-cell>
+      </ng-container>
+    </ng-container>
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</div>
+
+<mat-accordion class="mat-typography" fxHide fxShow.lt-md>
+  <mat-expansion-panel *ngFor="let feature of features">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+          <div fxLayout="row wrap" fxLayoutAlign="left center">
+              {{feature.name}}
+              <mat-icon mat-list-icon aria-hidden="true" [style.color]="feature.status.completed? 'green': 'red'">
+                {{feature.status.completed? 'done': 'clear'}}
+              </mat-icon>
+              <span class="cdk-visually-hidden">{{feature.status.completed? 'Implemented': 'Not implemented'}}</span>
+          </div>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div *ngFor="let status of feature.status.granularStatuses">
+      <app-granular-status [status]="status" [forceDescription]="true"></app-granular-status>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>

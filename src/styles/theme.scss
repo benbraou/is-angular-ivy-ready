@@ -1,6 +1,7 @@
 @import '~@angular/material/theming';
 @import '../app/components/common/stats-summary/stats-summary.theme.scss';
 @import '../app/components/ivy-full-status/ivy-overview/useful-links/useful-links.theme.scss';
+@import '../app/components/feature-table/feature-table.theme.scss';
 
 @include mat-core();
 
@@ -11,6 +12,7 @@ $ivy-warn: mat-palette($mat-red);
 @mixin custom-components-theme($theme) {
   @include stats-summary-component-theme($theme);
   @include useful-links-component-theme($theme);
+  @include feature-table-component-theme($theme);
 }
 
 $ivy-theme: mat-light-theme($ivy-primary, $ivy-accent, $ivy-warn);

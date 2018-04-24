@@ -60,11 +60,13 @@ describe('StatsSummaryComponent', () => {
     expect(vDivider).toBeTruthy();
 
     const h3s = contents[1].nativeElement.querySelectorAll('h3');
-    // querySelectorAll returns elements in document order, so it is safe to do assertions on the
-    // list of h3 elements. The test can be however made more complete by testing the wrapper div s
-    // ...
+    const h4s = contents[1].nativeElement.querySelectorAll('h4');
     expect(
       Array.from(h3s).map((header: HTMLElement) => header.textContent)
-    ).toEqual(['15', 'Completed', '12', 'Pending']);
+    ).toEqual(['15', '12']);
+
+    expect(
+      Array.from(h4s).map((header: HTMLElement) => header.textContent)
+    ).toEqual(['Completed', 'Pending']);
   });
 });

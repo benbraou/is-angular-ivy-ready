@@ -44,8 +44,8 @@ export class FeatureTableService {
    *
    * @param features A list of features that are part of the same feature group.
    */
-  getElementData(features: Feature[]): any[] {
-    return compose(
+  getElementData(features: Feature[]): CategoryToGranularStatus[] {
+    return <CategoryToGranularStatus[]>compose(
       map(reduceToElementBy((status: GranularStatus) => status.category)),
       map(getStatuses)
     )(features);
@@ -53,9 +53,12 @@ export class FeatureTableService {
 }
 
 export interface FeatureTableRow {
-  [index: string]: GranularStatus[];
+  [index: string]: GranularStatus;
 }
 
+export interface CategoryToGranularStatus {
+  [key: string]: GranularStatus;
+}
 /**
  * Returns the list of granular statuses of a feature. A fake status is added representing the
  * feature name and the corresponding table column. This will be the basis of displaying a row

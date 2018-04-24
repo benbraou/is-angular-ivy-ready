@@ -45,7 +45,7 @@ export class FeatureStatus {
 export class GranularStatus {
   category: string;
   code: string;
-  description: string;
+  description?: string;
 }
 
 export class ApiData {

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { OverallStatus } from '../../models';
+import { tableFeaturesFactory } from '../../mocks/feature.mock';
 
 @Component({
   selector: 'app-ivy-status',
@@ -10,10 +11,12 @@ import { OverallStatus } from '../../models';
       [nbrCompleted]="overallStatus.nbrFeaturesCompleted"
       [nbrPending]="overallStatus.nbrFeaturesPending">
     </app-ivy-overview>
+    <app-feature-table [features]="features"></app-feature-table>
   `,
 })
 export class IvyFullStatusComponent implements OnInit {
   title = 'Overall status';
+  features = tableFeaturesFactory().features;
   overallStatus: OverallStatus = {
     progressPercentage: 70,
     nbrFeaturesCompleted: 15,

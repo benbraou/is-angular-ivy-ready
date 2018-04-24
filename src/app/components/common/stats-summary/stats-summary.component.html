@@ -1,9 +1,10 @@
-<mat-card class="mat-typography">
+<mat-card class="mat-typography" fxFlex="1 1">
   <mat-card-title>{{title}}</mat-card-title>
   <div fxLayout="row wrap" fxLayoutAlign="center">
     <mat-progress-spinner
       [strokeWidth]="'4'"
       [color]="'red'"
+      [diameter]="'80'"
       [mode]="'determinate'"
       [value]="percentage"
       caption>
@@ -13,12 +14,12 @@
   <div fxLayout="row" class="stats">
     <div fxFlex="1 1 50%">
       <h3>{{nbrCompleted}}</h3>
-      <h3>Completed</h3>
+      <h4>Completed</h4>
     </div>
     <mat-divider fxFlex="0 0 0%" [inset]="true" [vertical]="true"></mat-divider>
     <div fxFlex="1 1 50%">
       <h3>{{nbrPending}}</h3>
-      <h3>Pending</h3>
+      <h4>Pending</h4>
     </div>
   </div>
 </mat-card>

@@ -12,6 +12,13 @@ import { ObservableMedia } from '@angular/flex-layout';
       </mat-sidenav-content>
     </mat-sidenav-container>
   `,
+  styles: [
+    `
+    mat-sidenav-content {
+      padding-top: 80px;
+    }
+  `,
+  ],
 })
 export class AppComponent {
   sideNavOpened: boolean;

@@ -6,8 +6,9 @@ import { OverallStatus } from '../../../models';
   template: `
     <div fxLayout="row wrap" fxLayoutAlign="space-between" class="ivy-overview">
       <app-stats-summary
+        fxLayout="row"
         fxFlex.gt-xs="100"
-        fxFlex.gt-sm="50"
+        fxFlex.gt-sm="40"
         [title]="title"
         [percentage]="percentage"
         [nbrCompleted]="nbrCompleted"
@@ -15,7 +16,7 @@ import { OverallStatus } from '../../../models';
       </app-stats-summary>
       <app-useful-links
         fxFlex.gt-xs="100"
-        fxFlex.gt-sm="49"
+        fxFlex.gt-sm="59"
         fxHide.lt-sm>
       </app-useful-links>
     </div>
