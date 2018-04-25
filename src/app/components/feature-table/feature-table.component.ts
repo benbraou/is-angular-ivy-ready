@@ -1,4 +1,10 @@
-import { Component, OnInit, Input } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Input,
+  OnChanges,
+  SimpleChanges,
+} from '@angular/core';
 import { MatTableDataSource } from '@angular/material';
 
 import {
@@ -12,7 +18,7 @@ import { Feature, GranularStatus } from '../../models';
   templateUrl: './feature-table.component.html',
   styleUrls: ['./feature-table.component.scss'],
 })
-export class FeatureTableComponent implements OnInit {
+export class FeatureTableComponent implements OnInit, OnChanges {
   @Input() features: Feature[];
 
   displayedColumns: string[];
@@ -22,9 +28,7 @@ export class FeatureTableComponent implements OnInit {
   constructor(private service: FeatureTableService) {}
 
   ngOnInit() {
-    this.displayedColumns = this.service.getTableColumns(this.features);
-    this.elementData = this.service.getElementData(this.features);
-    this.dataSource = new MatTableDataSource(this.elementData);
+    this.buildTableModel();
     this.dataSource.filterPredicate = (
       data: FeatureTableRow,
       filter: string
@@ -33,6 +37,18 @@ export class FeatureTableComponent implements OnInit {
         .toLowerCase()
         .includes(filter);
     };
+  }
+
+  buildTableModel() {
+    this.displayedColumns = this.service.getTableColumns(this.features);
+    this.elementData = this.service.getElementData(this.features);
+    this.dataSource = new MatTableDataSource(this.elementData);
+  }
+
+  ngOnChanges(changes: SimpleChanges) {
+    if (!changes.features.isFirstChange) {
+      this.buildTableModel();
+    }
   }
 
   applyFilter(filterValue: string) {
