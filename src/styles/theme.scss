@@ -13,7 +13,6 @@ $ivy-app-warn: mat-palette($mat-red);
 @mixin custom-components-ivy-app-theme($theme) {
   @include stats-summary-component-theme($theme);
   @include useful-links-component-theme($theme);
-  @include feature-table-component-theme($theme);
 }
 
 $ivy-app-theme: mat-light-theme(
@@ -30,7 +29,13 @@ $light-primary: mat-palette($mat-grey, 50, 50, 50);
 $light-accent: mat-palette($mat-light-blue, 500, 400, 800);
 $light-warn: mat-palette($mat-light-blue, 500, 400, 800);
 
+@mixin custom-components-light-theme($theme) {
+  @include feature-table-component-theme($theme);
+}
+
 $light-theme: mat-light-theme($light-primary, $light-accent, $light-warn);
+
+@include custom-components-light-theme($light-theme);
 
 .light-theme {
   @include angular-material-theme($light-theme);
