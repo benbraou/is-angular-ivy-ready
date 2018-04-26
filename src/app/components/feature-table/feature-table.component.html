@@ -1,7 +1,4 @@
 <div fxHide.lt-md class="mat-elevation-z1">
-  <mat-form-field>
-    <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
-  </mat-form-field>
   <mat-table #table [dataSource]="dataSource">
     <ng-container *ngFor="let cat of displayedColumns" matColumnDef={{cat}}>
       <ng-container *ngIf="elementData[0][cat].description === elementData[0][cat].category">

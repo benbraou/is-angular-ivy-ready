@@ -29,14 +29,6 @@ export class FeatureTableComponent implements OnInit, OnChanges {
 
   ngOnInit() {
     this.buildTableModel();
-    this.dataSource.filterPredicate = (
-      data: FeatureTableRow,
-      filter: string
-    ) => {
-      return JSON.stringify(data)
-        .toLowerCase()
-        .includes(filter);
-    };
   }
 
   buildTableModel() {
@@ -49,11 +41,5 @@ export class FeatureTableComponent implements OnInit, OnChanges {
     if (!changes.features.isFirstChange) {
       this.buildTableModel();
     }
-  }
-
-  applyFilter(filterValue: string) {
-    filterValue = filterValue.trim();
-    filterValue = filterValue.toLowerCase();
-    this.dataSource.filter = filterValue;
   }
 }
