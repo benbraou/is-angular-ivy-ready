@@ -5,18 +5,33 @@
 
 @include mat-core();
 
-$ivy-primary: mat-palette($mat-light-blue, 500, 400, 800);
-$ivy-accent: mat-palette($mat-red, 700, 600, 800);
-$ivy-warn: mat-palette($mat-red);
+// Main theme
+$ivy-app-primary: mat-palette($mat-light-blue, 500, 400, 800);
+$ivy-app-accent: mat-palette($mat-red, 700, 600, 800);
+$ivy-app-warn: mat-palette($mat-red);
 
-@mixin custom-components-theme($theme) {
+@mixin custom-components-ivy-app-theme($theme) {
   @include stats-summary-component-theme($theme);
   @include useful-links-component-theme($theme);
   @include feature-table-component-theme($theme);
 }
 
-$ivy-theme: mat-light-theme($ivy-primary, $ivy-accent, $ivy-warn);
+$ivy-app-theme: mat-light-theme(
+  $ivy-app-primary,
+  $ivy-app-accent,
+  $ivy-app-warn
+);
 
-// For the time being, only one theme is handled
-@include angular-material-theme($ivy-theme);
-@include custom-components-theme($ivy-theme);
+@include angular-material-theme($ivy-app-theme);
+@include custom-components-ivy-app-theme($ivy-app-theme);
+
+// Alternative theme
+$light-primary: mat-palette($mat-grey, 50, 50, 50);
+$light-accent: mat-palette($mat-light-blue, 500, 400, 800);
+$light-warn: mat-palette($mat-light-blue, 500, 400, 800);
+
+$light-theme: mat-light-theme($light-primary, $light-accent, $light-warn);
+
+.light-theme {
+  @include angular-material-theme($light-theme);
+}
