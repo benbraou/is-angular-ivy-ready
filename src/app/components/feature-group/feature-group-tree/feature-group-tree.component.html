@@ -1,0 +1,7 @@
+<h4 *ngIf="node.data.name!=='root' &&node.featureGroups!==null">{{node.data.nameAsHeader}}</h4>
+<div *ngIf="node.featureGroups===null && node.data.features!==null && node.data.features.length >0">
+  <app-granular-feature-group [name]="node.data.name" [features]="node.data.features"></app-granular-feature-group>
+</div>
+<div *ngIf="node.featureGroups!==null">
+    <app-feature-group-tree *ngFor="let fg of node.featureGroups" [node]="fg"></app-feature-group-tree>
+</div>

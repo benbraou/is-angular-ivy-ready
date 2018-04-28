@@ -1,5 +1,8 @@
 <app-feature-group-overview
   [name]="name"
   [progressInfo]="progressInfo"
-  ></app-feature-group-overview>
-<app-feature-table [features]="features"></app-feature-table>
+  >
+</app-feature-group-overview>
+
+<app-feature-table *ngIf="hasTableOfFeatures" [features]="features"></app-feature-table>
+<app-feature-lines *ngIf="!hasTableOfFeatures" [features]="features"></app-feature-lines>

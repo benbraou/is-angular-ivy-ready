@@ -1,3 +1,5 @@
+import { OverallStatus } from './ivy-status.model';
+
 export class Response {
   API: API;
   errors: Error[];
@@ -27,6 +29,7 @@ export class FeatureGroup {
 
 export class FeatureGroupData {
   name: string;
+  nameAsHeader?: string;
   features: Feature[];
 }
 
@@ -50,5 +53,6 @@ export class GranularStatus {
 
 export class ApiData {
   lastUpdateDate: string;
+  overallStatus?: OverallStatus;
   featureGroup: FeatureGroup;
 }

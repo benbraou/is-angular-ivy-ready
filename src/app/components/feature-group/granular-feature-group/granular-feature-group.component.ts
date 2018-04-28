@@ -8,6 +8,7 @@ import {
 
 import { Feature, FeatureGroupProgress } from '../../../models';
 import { FeatureGroupService } from '../../../services/feature-group.service';
+import { FeatureTableService } from '../../../services/feature-table.service';
 
 @Component({
   selector: 'app-granular-feature-group',
@@ -18,7 +19,12 @@ export class GranularFeatureGroupComponent implements OnInit, OnChanges {
   @Input() name: string;
   @Input() features: Feature[];
   progressInfo: FeatureGroupProgress;
-  constructor(private featureGroupService: FeatureGroupService) {}
+  hasTableOfFeatures: boolean;
+
+  constructor(
+    private featureGroupService: FeatureGroupService,
+    private featureTableService: FeatureTableService
+  ) {}
 
   ngOnInit() {
     this.updateProgressInfo();
@@ -32,6 +38,9 @@ export class GranularFeatureGroupComponent implements OnInit, OnChanges {
 
   updateProgressInfo() {
     this.progressInfo = this.featureGroupService.getProgressInformation(
+      this.features
+    );
+    this.hasTableOfFeatures = this.featureTableService.isForTableDisplay(
       this.features
     );
   }
