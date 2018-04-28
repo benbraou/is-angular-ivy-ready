@@ -132,9 +132,7 @@ export class SpinnerCaptionDirective extends BaseDirective
       this._displayConfig.figCaption.styles['line-height'] = `${this._diameter /
         4}px`;
     }
-    if (!!this.value) {
-      this._displayConfig.figCaption.properties.innerHTML = `${this.value}%`;
-    }
+    this._displayConfig.figCaption.properties.innerHTML = `${this.value || 0}%`;
   }
 
   private _updateCaption() {}

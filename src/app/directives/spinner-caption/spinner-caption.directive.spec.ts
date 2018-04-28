@@ -84,6 +84,21 @@ describe('[directive] CaptionDirective', () => {
     expect(figCaptions[0].styles['font-size']).toEqual('25px');
     expect(figCaptions[0].styles['line-height']).toEqual('25px');
   });
+
+  it('should display 0% when falsy value is provided', () => {
+    const template = `
+    <mat-progress-spinner [mode]="'determinate'" [diameter]="'100'" caption> </mat-progress-spinner>
+    `;
+    fixture = new FixtureBuilder()
+      .withTemplate(template)
+      .withComponentClass(TestSpinnerCaptionComponent)
+      .build();
+    fixture.detectChanges();
+
+    const figCaptions = fixture.debugElement.queryAll(By.css('figCaption'));
+    expect(figCaptions.length).toBe(1);
+    expect(figCaptions[0].properties['innerHTML']).toEqual('0%');
+  });
 });
 
 @Component({
