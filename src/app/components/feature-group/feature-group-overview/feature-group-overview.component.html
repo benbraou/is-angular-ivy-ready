@@ -1,0 +1,18 @@
+<mat-card class="mat-typography" fxFlex="1 1">
+  <div fxLayout="row wrap" fxLayoutAlign="left center" class="light-theme">
+      <h3>{{name}}</h3>
+      <mat-progress-spinner
+      [strokeWidth]="'4'"
+      [diameter]="'55'"
+      [mode]="'determinate'"
+      caption
+      [noDefaultColor]="true"
+      [value]="progressInfo.percentage"
+      >
+    </mat-progress-spinner>
+    <mat-icon mat-list-icon fxHide.lt-sm>done</mat-icon>
+    <h4 fxHide.lt-sm>{{progressInfo.nbrCompleted}} <span fxHide.lt-md>features </span> completed</h4>
+    <mat-icon mat-list-icon fxHide.lt-sm>clear</mat-icon>
+    <h4 fxHide.lt-sm>{{progressInfo.nbrPending}} <span fxHide.lt-md>features </span> pending</h4>
+  </div>
+</mat-card>

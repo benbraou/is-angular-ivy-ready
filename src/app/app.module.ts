@@ -7,7 +7,7 @@ import { LoggerService } from './services/logger.service';
 import { RoutingModule } from './routing.module';
 import { ComponentModule } from './components/component.module';
 import { FeatureTableService } from './services/feature-table.service';
-import { FeatureService } from './services/feature.service';
+import { FeatureGroupService } from './services/feature-group.service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,7 +17,7 @@ import { FeatureService } from './services/feature.service';
     ComponentModule.forRoot(),
     RoutingModule,
   ],
-  providers: [LoggerService, FeatureTableService, FeatureService],
+  providers: [LoggerService, FeatureTableService, FeatureGroupService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

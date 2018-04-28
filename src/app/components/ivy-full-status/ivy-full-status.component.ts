@@ -11,7 +11,8 @@ import { tableFeaturesFactory } from '../../mocks/feature.mock';
       [nbrCompleted]="overallStatus.nbrFeaturesCompleted"
       [nbrPending]="overallStatus.nbrFeaturesPending">
     </app-ivy-overview>
-    <app-feature-table [features]="features"></app-feature-table>
+    <div style="margin:10px"></div>
+    <app-granular-feature-group [features]="features" [name]="'Decorators'"></app-granular-feature-group>
   `,
 })
 export class IvyFullStatusComponent implements OnInit {

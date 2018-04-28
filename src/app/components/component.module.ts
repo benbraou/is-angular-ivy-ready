@@ -14,6 +14,8 @@ import { IvyOverviewComponent } from './ivy-full-status/ivy-overview/ivy-overvie
 import { UsefulLinksComponent } from './ivy-full-status/ivy-overview/useful-links/useful-links.component';
 import { FeatureTableComponent } from './feature-table/feature-table.component';
 import { GranularStatusComponent } from './common/granular-status/granular-status.component';
+import { GranularFeatureGroupComponent } from './feature-group/granular-feature-group/granular-feature-group.component';
+import { FeatureGroupOverviewComponent } from './feature-group/feature-group-overview/feature-group-overview.component';
 
 @NgModule({
   imports: [CommonModule, MaterialModule, FlexLayoutModule, DirectiveModule],
@@ -25,6 +27,8 @@ import { GranularStatusComponent } from './common/granular-status/granular-statu
     UsefulLinksComponent,
     FeatureTableComponent,
     GranularStatusComponent,
+    GranularFeatureGroupComponent,
+    FeatureGroupOverviewComponent,
   ],
   providers: [IvyLinksService, { provide: ADD_FLEX_STYLES, useValue: true }],
   exports: [
@@ -35,6 +39,8 @@ import { GranularStatusComponent } from './common/granular-status/granular-statu
     UsefulLinksComponent,
     FeatureTableComponent,
     GranularStatusComponent,
+    GranularFeatureGroupComponent,
+    FeatureGroupOverviewComponent,
     MaterialModule,
   ],
 })

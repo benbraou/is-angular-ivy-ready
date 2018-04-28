@@ -2,6 +2,7 @@
 @import '../app/components/common/stats-summary/stats-summary.theme.scss';
 @import '../app/components/ivy-full-status/ivy-overview/useful-links/useful-links.theme.scss';
 @import '../app/components/feature-table/feature-table.theme.scss';
+@import '../app/components/feature-group/feature-group-overview/feature-group-overview.theme.scss';
 
 @include mat-core();
 
@@ -13,6 +14,7 @@ $ivy-app-warn: mat-palette($mat-red);
 @mixin custom-components-ivy-app-theme($theme) {
   @include stats-summary-component-theme($theme);
   @include useful-links-component-theme($theme);
+  @include feature-group-overview-component-theme($theme);
 }
 
 $ivy-app-theme: mat-light-theme(

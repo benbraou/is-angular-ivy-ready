@@ -1,0 +1,16 @@
+@import '~@angular/material/theming';
+
+@mixin feature-group-overview-component-theme($theme) {
+  $primary: map-get($theme, primary);
+  $config: mat-typography-config();
+
+  app-feature-group-overview {
+    > .mat-card {
+      background-color: mat-color($primary);
+      color: white;
+      figcaption {
+        color: mat-color($primary);
+      }
+    }
+  }
+}

@@ -7,7 +7,7 @@ import { By } from '@angular/platform-browser';
 import { SpinnerCaptionDirective } from './spinner-caption.directive';
 import { FixtureBuilder } from '../../helpers/testing/fixture.builder';
 
-describe('caption directive', () => {
+describe('[directive] CaptionDirective', () => {
   let fixture: ComponentFixture<any>;
 
   beforeEach(() => {
@@ -31,7 +31,7 @@ describe('caption directive', () => {
     expect(figures.length).toBe(0);
   });
 
-  it('should work on mat-progress-spinner caption directive is not used', () => {
+  it('should work on mat-progress-spinner when caption directive is not used', () => {
     const template = `
     <mat-progress-spinner [mode]="'determinate'" [value]="'10'" caption> </mat-progress-spinner>
     `;

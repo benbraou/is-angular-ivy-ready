@@ -35,6 +35,9 @@ export class SpinnerCaptionDirective extends BaseDirective
   private _diameter = 0;
   private _displayConfig: DisplayConfig;
 
+  /** Whether the directive should apply a default color to the figcaption element */
+  @Input() noDefaultColor: boolean;
+
   /** Value of the progress circle. */
   @Input() value: string;
 
@@ -117,7 +120,9 @@ export class SpinnerCaptionDirective extends BaseDirective
   }
 
   private _updateDisplayConfig(color: string) {
-    this._displayConfig.figCaption.styles.color = color;
+    if (!this.noDefaultColor) {
+      this._displayConfig.figCaption.styles.color = color;
+    }
     if (this._diameter > 0) {
       this._displayConfig.figCaption.styles.top = `calc(50% - ${Number(
         this._diameter

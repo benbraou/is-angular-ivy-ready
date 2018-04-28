@@ -17,7 +17,10 @@ const figCaptionConfig = {
 
 export function getDefaultDisplayConfig() {
   return {
-    figCaption: { ...figCaptionConfig },
+    figCaption: {
+      styles: { ...figCaptionConfig.styles },
+      properties: { ...figCaptionConfig.properties },
+    },
   };
 }
 

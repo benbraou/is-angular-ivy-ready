@@ -1,19 +1,19 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { FeatureService } from './feature.service';
+import { FeatureGroupService } from './feature-group.service';
 import { tableFeaturesFactory } from '../mocks/feature.mock';
 
 describe('[Service] Feature', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [FeatureService],
+      providers: [FeatureGroupService],
     });
   });
 
   describe('getProgressInformation', () => {
     it(
       'should handle empty list of features',
-      inject([FeatureService], (service: FeatureService) => {
+      inject([FeatureGroupService], (service: FeatureGroupService) => {
         expect(service.getProgressInformation([])).toEqual({
           percentage: 0,
           nbrCompleted: 0,
@@ -24,7 +24,7 @@ describe('[Service] Feature', () => {
 
     it(
       'should correctly calculate progress information',
-      inject([FeatureService], (service: FeatureService) => {
+      inject([FeatureGroupService], (service: FeatureGroupService) => {
         const features = tableFeaturesFactory().features;
         expect(service.getProgressInformation(features)).toEqual({
           percentage: 14.29,

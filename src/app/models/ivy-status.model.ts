@@ -3,3 +3,9 @@ export class OverallStatus {
   nbrFeaturesPending: number;
   progressPercentage: number;
 }
+
+export interface FeatureGroupProgress {
+  percentage: number;
+  nbrCompleted: number;
+  nbrPending: number;
+}

@@ -12,7 +12,8 @@ import { OverallStatus } from '../../../models';
         [title]="title"
         [percentage]="percentage"
         [nbrCompleted]="nbrCompleted"
-        [nbrPending]="nbrPending" >
+        [nbrPending]="nbrPending"
+        fxFlexOrder.lt-md="1">
       </app-stats-summary>
       <app-useful-links
         fxFlex.gt-xs="100"

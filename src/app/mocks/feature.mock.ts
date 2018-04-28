@@ -35,7 +35,7 @@ const TABLE_FEATURES = [
   {
     name: '`@Component`',
     status: {
-      completed: false,
+      completed: true,
       categories: [
         'Annotation',
         '`defineXXX()`',
@@ -67,7 +67,7 @@ const TABLE_FEATURES = [
         },
         {
           category: 'Back Patch',
-          code: 'NOT_IMPLEMENTED',
+          code: 'IMPLEMENTED',
           description: 'Back Patch',
         },
       ],
@@ -349,7 +349,7 @@ const ELEMENT_DATA = [
     },
     'Back Patch': {
       category: 'Back Patch',
-      code: 'NOT_IMPLEMENTED',
+      code: 'IMPLEMENTED',
       description: 'Back Patch',
     },
   },
