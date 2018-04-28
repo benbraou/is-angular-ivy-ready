@@ -13,6 +13,7 @@ import { tableFeaturesFactory } from '../../mocks/feature.mock';
     </app-ivy-overview>
     <div style="margin:10px"></div>
     <app-granular-feature-group [features]="features" [name]="'Decorators'"></app-granular-feature-group>
+    <app-feature-lines [features]="features"></app-feature-lines>
   `,
 })
 export class IvyFullStatusComponent implements OnInit {

@@ -16,6 +16,7 @@ import { FeatureTableComponent } from './feature-table/feature-table.component';
 import { GranularStatusComponent } from './common/granular-status/granular-status.component';
 import { GranularFeatureGroupComponent } from './feature-group/granular-feature-group/granular-feature-group.component';
 import { FeatureGroupOverviewComponent } from './feature-group/feature-group-overview/feature-group-overview.component';
+import { FeatureLinesComponent } from './feature-lines/feature-lines.component';
 
 @NgModule({
   imports: [CommonModule, MaterialModule, FlexLayoutModule, DirectiveModule],
@@ -29,6 +30,7 @@ import { FeatureGroupOverviewComponent } from './feature-group/feature-group-ove
     GranularStatusComponent,
     GranularFeatureGroupComponent,
     FeatureGroupOverviewComponent,
+    FeatureLinesComponent,
   ],
   providers: [IvyLinksService, { provide: ADD_FLEX_STYLES, useValue: true }],
   exports: [
@@ -41,6 +43,7 @@ import { FeatureGroupOverviewComponent } from './feature-group/feature-group-ove
     GranularStatusComponent,
     GranularFeatureGroupComponent,
     FeatureGroupOverviewComponent,
+    FeatureLinesComponent,
     MaterialModule,
   ],
 })

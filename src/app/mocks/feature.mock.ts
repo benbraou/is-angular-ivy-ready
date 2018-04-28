@@ -4,6 +4,10 @@ export function notTableFeatureFactory() {
   return { ...NOT_TABLE_FEATURE };
 }
 
+export function featureLines() {
+  return [...LINES_OF_FEATURES];
+}
+
 export function tableFeatureFactory(
   featureId: 0 | 1 | 2 | 3 | 4 | 5 | 6
 ): Feature {
@@ -496,5 +500,161 @@ const ELEMENT_DATA = [
       code: 'NOT_IMPLEMENTED',
       description: 'Back Patch',
     },
+  },
+];
+
+const LINES_OF_FEATURES = [
+  {
+    name: 'Basic setup of stand alone executable',
+    status: {
+      completed: false,
+      categories: null,
+      granularStatuses: [
+        {
+          category: '',
+          code: 'NOT_IMPLEMENTED',
+          description: '',
+        },
+      ],
+    },
+    childFeatures: null,
+  },
+  {
+    name: 'Integration with WebPack (cli)',
+    status: {
+      completed: false,
+      categories: null,
+      granularStatuses: [
+        {
+          category: '',
+          code: 'NOT_IMPLEMENTED',
+          description: '',
+        },
+      ],
+    },
+    childFeatures: null,
+  },
+  {
+    name:
+      'Rewrite existing code by interpreting the associated STORING_METADATA_IN_D.TS',
+    status: {
+      completed: false,
+      categories: null,
+      granularStatuses: [
+        {
+          category: '',
+          code: 'NOT_IMPLEMENTED',
+          description: '',
+        },
+      ],
+    },
+    childFeatures: [
+      {
+        name: '`PipeCompiler`: `@Pipe` =\u003e `definePipe`',
+        status: {
+          completed: false,
+          categories: null,
+          granularStatuses: [
+            {
+              category: '',
+              code: 'NOT_IMPLEMENTED',
+              description: '',
+            },
+          ],
+        },
+        childFeatures: null,
+      },
+      {
+        name: '`DirectiveCompiler`: `@Directive` =\u003e `defineDirective`',
+        status: {
+          completed: false,
+          categories: null,
+          granularStatuses: [
+            {
+              category: '',
+              code: 'NOT_IMPLEMENTED',
+              description: '',
+            },
+          ],
+        },
+        childFeatures: null,
+      },
+      {
+        name: '`NgModuleCompiler`: `@NgModule` =\u003e `defineInjector`',
+        status: {
+          completed: false,
+          categories: null,
+          granularStatuses: [
+            {
+              category: '',
+              code: 'NOT_IMPLEMENTED',
+              description: '',
+            },
+          ],
+        },
+        childFeatures: null,
+      },
+      {
+        name: '`ComponentCompiler`: `@Component` =\u003e `defineComponent`',
+        status: {
+          completed: false,
+          categories: null,
+          granularStatuses: [
+            {
+              category: '',
+              code: 'NOT_IMPLEMENTED',
+              description: '',
+            },
+          ],
+        },
+        childFeatures: [
+          {
+            name: '`TemplateCompiler`',
+            status: {
+              completed: false,
+              categories: null,
+              granularStatuses: [
+                {
+                  category: '',
+                  code: 'NOT_IMPLEMENTED',
+                  description: '',
+                },
+              ],
+            },
+            childFeatures: null,
+          },
+          {
+            name: '`StyleCompiler`',
+            status: {
+              completed: false,
+              categories: null,
+              granularStatuses: [
+                {
+                  category: '',
+                  code: 'NOT_IMPLEMENTED',
+                  description: '',
+                },
+              ],
+            },
+            childFeatures: null,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: 'Documentation',
+    status: {
+      completed: false,
+      categories: null,
+      granularStatuses: [
+        {
+          category: '',
+          code: 'NOT_IMPLEMENTED',
+          description: '',
+        },
+      ],
+    },
+    childFeatures: null,
   },
 ];
