@@ -8,7 +8,6 @@ import { ENHANCED_IVY_RESPONSE } from '../../mocks/ivy-api.mock';
 @Component({
   selector: 'app-ivy-status',
   template: `
-    <ng-container *ngIf="!!response && !!response.data">
       <app-ivy-overview
         [title] = "'Overall status'"
         [percentage]="overallStatus.progressPercentage"
@@ -17,7 +16,6 @@ import { ENHANCED_IVY_RESPONSE } from '../../mocks/ivy-api.mock';
       </app-ivy-overview>
       <div style="margin:10px"></div>
       <app-feature-group-tree [node]="rootFeatureGroup"></app-feature-group-tree>
-    </ng-container>
     <!-- In the future, if there is no valid response, a meaningful error message will be displayed-->
   `,
 })

@@ -20,6 +20,7 @@ import { FeatureLinesComponent } from './feature-lines/feature-lines.component';
 import { FeatureGroupTreeComponent } from './feature-group/feature-group-tree/feature-group-tree.component';
 import { FooterComponent } from './../components/footer/footer.component';
 import { GithubLinkComponent } from './common/github-link/github-link.component';
+import { WaitingComponent } from './common/waiting/waiting.component';
 
 @NgModule({
   imports: [CommonModule, MaterialModule, FlexLayoutModule, DirectiveModule],
@@ -36,6 +37,7 @@ import { GithubLinkComponent } from './common/github-link/github-link.component'
     FeatureLinesComponent,
     FeatureGroupTreeComponent,
     GithubLinkComponent,
+    WaitingComponent,
     FooterComponent,
   ],
   providers: [IvyLinksService, { provide: ADD_FLEX_STYLES, useValue: true }],
@@ -52,6 +54,7 @@ import { GithubLinkComponent } from './common/github-link/github-link.component'
     FeatureLinesComponent,
     FeatureGroupTreeComponent,
     GithubLinkComponent,
+    WaitingComponent,
     FooterComponent,
     MaterialModule,
   ],

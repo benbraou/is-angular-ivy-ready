@@ -23,10 +23,26 @@ describe('IvyFullStatusComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(IvyFullStatusComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
   });
 
   it('should create', () => {
+    component.overallStatus = {
+      nbrFeaturesCompleted: 7,
+      nbrFeaturesPending: 3,
+      progressPercentage: 70,
+    };
+    fixture.detectChanges();
     expect(component).toBeTruthy();
+
+    const OverviewElement = fixture.debugElement.nativeElement.querySelector(
+      'app-ivy-overview'
+    );
+    expect(OverviewElement).toBeTruthy();
+
+    const featureGroupTreeElement = fixture.debugElement.nativeElement.querySelector(
+      'app-feature-group-tree'
+    );
+    expect(featureGroupTreeElement).toBeTruthy();
+    // more tests to come
   });
 });

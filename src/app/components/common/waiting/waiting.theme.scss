@@ -1,0 +1,12 @@
+@import '~@angular/material/theming';
+
+@mixin waiting-component-theme($theme) {
+  $primary: map-get($theme, primary);
+  $config: mat-typography-config();
+
+  app-waiting {
+    > h4.waiting {
+      color: mat-color($primary);
+    }
+  }
+}
