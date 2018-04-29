@@ -43,8 +43,9 @@ import { Feature } from '../../models';
   `,
   styles: [
     `
-    .mat-expansion-panel-header {
+    .mat-expansion-panel-header, .mat-list-item {
       color: #000000;
+      font-size: 14px;
     }
   `,
   ],

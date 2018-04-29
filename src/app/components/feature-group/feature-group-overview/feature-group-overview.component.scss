@@ -7,9 +7,17 @@ mat-card {
   h4 {
     margin: 0px 10px 0px 0px;
   }
+
   figure {
     margin: 0px;
   }
+
+  &.sm {
+    figure {
+      margin: auto;
+    }
+  }
+
   mat-progress-spinner {
     margin-right: 10px;
   }

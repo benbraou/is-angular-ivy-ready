@@ -1,0 +1,11 @@
+@import '~@angular/material/theming';
+
+@mixin feature-group-tree-component-theme($theme) {
+  $primary: map-get($theme, primary);
+
+  app-feature-group-tree {
+    h4.header {
+      color: mat-color($primary);
+    }
+  }
+}
