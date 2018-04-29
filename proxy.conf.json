@@ -1,0 +1,10 @@
+{
+  "/status": {
+    "target": "https://ivy-status-api.appspot.com/v1",
+    "secure": false,
+    "pathRewrite": {
+      "^/status": ""
+    },
+    "changeOrigin": true
+  }
+}

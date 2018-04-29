@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { Component, NO_ERRORS_SCHEMA } from '@angular/core';
 
+import { RouterTestingModule } from '@angular/router/testing';
+
 import { IvyFullStatusComponent } from './ivy-full-status.component';
 import { MaterialModule } from '../material.module';
 
@@ -13,7 +15,7 @@ describe('IvyFullStatusComponent', () => {
       TestBed.configureTestingModule({
         declarations: [IvyFullStatusComponent],
         schemas: [NO_ERRORS_SCHEMA],
-        imports: [MaterialModule],
+        imports: [MaterialModule, RouterTestingModule],
       }).compileComponents();
     })
   );
