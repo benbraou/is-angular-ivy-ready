@@ -1,4 +1,4 @@
-import { FeatureTableService } from './../../../services/feature-table.service';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 
@@ -6,6 +6,7 @@ import { MaterialModule } from '../../material.module';
 import { DirectiveModule } from '../../../directives/directive.module';
 
 import { FeatureGroupService } from '../../../services/feature-group.service';
+import { FeatureTableService } from './../../../services/feature-table.service';
 
 import { GranularFeatureGroupComponent } from './granular-feature-group.component';
 import { FeatureGroupOverviewComponent } from '../feature-group-overview/feature-group-overview.component';
@@ -30,11 +31,13 @@ describe('GranularFeatureGroupComponent', () => {
   featureTableService = {
     getTableColumns: () => [],
     getElementData: () => [],
+    isForTableDisplay: () => true,
   };
   beforeEach(
     async(() => {
       TestBed.configureTestingModule({
         imports: [MaterialModule, DirectiveModule],
+        schemas: [CUSTOM_ELEMENTS_SCHEMA],
         providers: [
           { provide: FeatureGroupService, useValue: featureGroupService },
           { provide: FeatureTableService, useValue: featureTableService },
