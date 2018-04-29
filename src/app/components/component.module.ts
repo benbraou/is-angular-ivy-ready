@@ -18,6 +18,8 @@ import { GranularFeatureGroupComponent } from './feature-group/granular-feature-
 import { FeatureGroupOverviewComponent } from './feature-group/feature-group-overview/feature-group-overview.component';
 import { FeatureLinesComponent } from './feature-lines/feature-lines.component';
 import { FeatureGroupTreeComponent } from './feature-group/feature-group-tree/feature-group-tree.component';
+import { FooterComponent } from './../components/footer/footer.component';
+import { GithubLinkComponent } from './common/github-link/github-link.component';
 
 @NgModule({
   imports: [CommonModule, MaterialModule, FlexLayoutModule, DirectiveModule],
@@ -33,6 +35,8 @@ import { FeatureGroupTreeComponent } from './feature-group/feature-group-tree/fe
     FeatureGroupOverviewComponent,
     FeatureLinesComponent,
     FeatureGroupTreeComponent,
+    GithubLinkComponent,
+    FooterComponent,
   ],
   providers: [IvyLinksService, { provide: ADD_FLEX_STYLES, useValue: true }],
   exports: [
@@ -47,6 +51,8 @@ import { FeatureGroupTreeComponent } from './feature-group/feature-group-tree/fe
     FeatureGroupOverviewComponent,
     FeatureLinesComponent,
     FeatureGroupTreeComponent,
+    GithubLinkComponent,
+    FooterComponent,
     MaterialModule,
   ],
 })

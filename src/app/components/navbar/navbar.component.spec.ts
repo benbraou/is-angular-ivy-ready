@@ -2,6 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MatToolbarModule } from '@angular/material';
 
 import { NavbarComponent } from './navbar.component';
+import { GithubLinkComponent } from '../common/github-link/github-link.component';
 
 describe('NavbarComponent', () => {
   let component: NavbarComponent;
@@ -11,7 +12,7 @@ describe('NavbarComponent', () => {
     async(() => {
       TestBed.configureTestingModule({
         imports: [MatToolbarModule],
-        declarations: [NavbarComponent],
+        declarations: [NavbarComponent, GithubLinkComponent],
       }).compileComponents();
     })
   );

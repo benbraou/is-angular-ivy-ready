@@ -11,6 +11,7 @@ import { ObservableMedia } from '@angular/flex-layout';
         <router-outlet></router-outlet>
       </mat-sidenav-content>
     </mat-sidenav-container>
+    <app-footer></app-footer>
   `,
   styles: [
     `
