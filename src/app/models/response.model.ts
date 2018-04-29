@@ -8,7 +8,7 @@ export class Response {
 }
 
 export class API {
-  version: string;
+  version: number;
 }
 
 export class ErrorSource {

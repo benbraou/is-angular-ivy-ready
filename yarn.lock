@@ -248,6 +248,16 @@
   dependencies:
     "@types/jasmine" "*"
 
+"@types/lodash.clonedeep@^4.5.3":
+  version "4.5.3"
+  resolved "https://registry.yarnpkg.com/@types/lodash.clonedeep/-/lodash.clonedeep-4.5.3.tgz#d42cfba3d929a4e1177a775142ce2a9444e384cf"
+  dependencies:
+    "@types/lodash" "*"
+
+"@types/lodash@*":
+  version "4.14.108"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.108.tgz#02656af3add2e5b3174f830862c47421c00ef817"
+
 "@types/node@^6.0.46", "@types/node@~6.0.60":
   version "6.0.102"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-6.0.102.tgz#a6cf3b9843286b63eb362a8522bc382d96fe68d1"
