@@ -8,14 +8,14 @@ import { ENHANCED_IVY_RESPONSE } from '../../mocks/ivy-api.mock';
 @Component({
   selector: 'app-ivy-status',
   template: `
-      <app-ivy-overview
-        [title] = "'Overall status'"
-        [percentage]="overallStatus.progressPercentage"
-        [nbrCompleted]="overallStatus.nbrFeaturesCompleted"
-        [nbrPending]="overallStatus.nbrFeaturesPending">
-      </app-ivy-overview>
-      <div style="margin:10px"></div>
-      <app-feature-group-tree [node]="rootFeatureGroup"></app-feature-group-tree>
+    <app-ivy-overview
+      [title] = "'Overall status'"
+      [percentage]="overallStatus?.progressPercentage"
+      [nbrCompleted]="overallStatus?.nbrFeaturesCompleted"
+      [nbrPending]="overallStatus?.nbrFeaturesPending">
+    </app-ivy-overview>
+    <div style="margin:10px"></div>
+    <app-feature-group-tree [node]="rootFeatureGroup"></app-feature-group-tree>
     <!-- In the future, if there is no valid response, a meaningful error message will be displayed-->
   `,
 })

@@ -4,7 +4,10 @@ import { OverallStatus } from '../../../models';
 @Component({
   selector: 'app-ivy-overview',
   template: `
-    <div fxLayout="row wrap" fxLayoutAlign="space-between" class="ivy-overview">
+    <div fxLayout="row wrap"
+      fxLayoutAlign="space-between"
+      class="ivy-overview"
+      *ngIf="!!percentage || !!nbrCompleted|| !!nbrPending">
       <app-stats-summary
         fxLayout="row"
         fxFlex.gt-xs="100"
