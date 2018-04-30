@@ -1,5 +1,5 @@
+sudo: required
 dist: trusty
-sudo: false
 language: node_js
 node_js:
   - "8.9.1"
@@ -15,5 +15,4 @@ install:
   - npm install
 script:
   - npm run lint
-  - npm run test --single-run
-  - npm run build:client-and-server-bundles
+  - ng test --single-run
