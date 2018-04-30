@@ -1,7 +1,7 @@
-<h4 class="header" *ngIf="node.data.name!=='root' &&node.featureGroups!==null">{{node.data.nameAsHeader}}</h4>
-<div *ngIf="node.featureGroups===null && node.data.features!==null && node.data.features.length >0">
+<h4 class="header" *ngIf="!!node && !!node.data && node.data.name!=='root' && !!node.featureGroups">{{node.data.nameAsHeader}}</h4>
+<div *ngIf="!!node && !node.featureGroups && !!node.data && !!node.data.features && node.data.features.length >0">
   <app-granular-feature-group [name]="node.data.nameAsHeader" [features]="node.data.features"></app-granular-feature-group>
 </div>
-<div *ngIf="node.featureGroups!==null">
+<div *ngIf="!!node && !!node.featureGroups">
     <app-feature-group-tree *ngFor="let fg of node.featureGroups" [node]="fg"></app-feature-group-tree>
 </div>
