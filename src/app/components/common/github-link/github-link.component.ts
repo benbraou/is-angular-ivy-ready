@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-github-link',
+  /* tslint:disable */
   template: `
     <a aria-label="Github Project" title="GitHub Project" href="https://github.com/benbraou/is-angular-ivy-ready">
       <svg height="24" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true">
@@ -9,6 +10,7 @@ import { Component, OnInit } from '@angular/core';
       </svg>
     </a>
   `,
+  /* tslint:enable */
   styles: [
     `
     a {

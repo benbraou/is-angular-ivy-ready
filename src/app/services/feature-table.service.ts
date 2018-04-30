@@ -3,6 +3,23 @@ import { map, compose, reduceBy, concat } from 'ramda';
 
 import { Feature, GranularStatus } from '../models';
 
+export const reduceToElementBy = reduceBy((_, prop) => prop, {});
+
+/**
+ * Returns the list of granular statuses of a feature. A fake status is added representing the
+ * feature name and the corresponding table column. This will be the basis of displaying a row
+ * inside the feature table
+ *
+ * @param feature An Ivy feature
+ */
+export const getStatuses = (feature: Feature) => [
+  {
+    category: feature.status.categories[0],
+    code: feature.name,
+  },
+  ...feature.status.granularStatuses,
+];
+
 @Injectable()
 export class FeatureTableService {
   /**
@@ -59,19 +76,3 @@ export interface FeatureTableRow {
 export interface CategoryToGranularStatus {
   [key: string]: GranularStatus;
 }
-/**
- * Returns the list of granular statuses of a feature. A fake status is added representing the
- * feature name and the corresponding table column. This will be the basis of displaying a row
- * inside the feature table
- *
- * @param feature An Ivy feature
- */
-export const getStatuses = (feature: Feature) => [
-  {
-    category: feature.status.categories[0],
-    code: feature.name,
-  },
-  ...feature.status.granularStatuses,
-];
-
-export const reduceToElementBy = reduceBy((_, prop) => prop, {});

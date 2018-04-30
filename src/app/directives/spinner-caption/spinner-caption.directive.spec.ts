@@ -7,6 +7,14 @@ import { By } from '@angular/platform-browser';
 import { SpinnerCaptionDirective } from './spinner-caption.directive';
 import { FixtureBuilder } from '../../helpers/testing/fixture.builder';
 
+@Component({
+  selector: 'app-test-spinner-caption',
+  template: '',
+})
+export class TestSpinnerCaptionComponent implements OnInit {
+  ngOnInit() {}
+}
+
 describe('[directive] CaptionDirective', () => {
   let fixture: ComponentFixture<any>;
 
@@ -100,11 +108,3 @@ describe('[directive] CaptionDirective', () => {
     expect(figCaptions[0].properties['innerHTML']).toEqual('0%');
   });
 });
-
-@Component({
-  selector: 'app-test-spinner-caption',
-  template: '',
-})
-export class TestSpinnerCaptionComponent implements OnInit {
-  ngOnInit() {}
-}

@@ -1,26 +1,5 @@
 import { Feature } from '../models';
 
-export function notTableFeatureFactory() {
-  return { ...NOT_TABLE_FEATURE };
-}
-
-export function featureLines() {
-  return [...LINES_OF_FEATURES];
-}
-
-export function tableFeatureFactory(
-  featureId: 0 | 1 | 2 | 3 | 4 | 5 | 6
-): Feature {
-  return { ...TABLE_FEATURES[featureId] };
-}
-
-export function tableFeaturesFactory() {
-  return {
-    features: [...TABLE_FEATURES],
-    elementData: [...ELEMENT_DATA],
-  };
-}
-
 const NOT_TABLE_FEATURE: Feature = {
   name: 'Basic setup of the transformer into `tsc`',
   status: {
@@ -658,3 +637,24 @@ const LINES_OF_FEATURES = [
     childFeatures: null,
   },
 ];
+
+export function notTableFeatureFactory() {
+  return { ...NOT_TABLE_FEATURE };
+}
+
+export function featureLines() {
+  return [...LINES_OF_FEATURES];
+}
+
+export function tableFeatureFactory(
+  featureId: 0 | 1 | 2 | 3 | 4 | 5 | 6
+): Feature {
+  return { ...TABLE_FEATURES[featureId] };
+}
+
+export function tableFeaturesFactory() {
+  return {
+    features: [...TABLE_FEATURES],
+    elementData: [...ELEMENT_DATA],
+  };
+}

@@ -5,6 +5,9 @@ import { IvyOverviewComponent } from './ivy-overview.component';
 import { StatsSummaryComponent } from '../../common/stats-summary/stats-summary.component';
 import { MaterialModule } from '../../material.module';
 
+@Component({ selector: 'app-useful-links', template: '' })
+class UsefulLinksStubComponent {}
+
 describe('IvyOverviewComponent', () => {
   let component: IvyOverviewComponent;
   let fixture: ComponentFixture<IvyOverviewComponent>;
@@ -32,6 +35,3 @@ describe('IvyOverviewComponent', () => {
     expect(component).toBeTruthy();
   });
 });
-
-@Component({ selector: 'app-useful-links', template: '' })
-class UsefulLinksStubComponent {}
