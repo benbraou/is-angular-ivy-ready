@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/benbraou/is-angular-ivy-ready.svg?branch=main)](https://travis-ci.org/benbraou/is-angular-ivy-ready)
 # Is Angular Ivy Ready
 https://is-angular-ivy-ready.firebaseapp.com/
 ## What is Ivy
