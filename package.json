@@ -5,7 +5,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --proxy-config proxy.conf.json",
-    "build": "ng build --prod && ng build --prod --app 1 --output-hashing=false",
+    "build": "ng build --prod && ng build --prod --app 1 --output-hashing=false && npm run copy-all-functions",
+    "copy-client-functions": "cp -R dist functions/",
+    "copy-server-functions": "cp -R dist-server functions/",
+    "copy-all-functions": "npm run copy-client-functions && npm run copy-server-functions",
     "firebase-serve": "firebase serve --only functions,hosting",
     "deploy": "firebase deploy",
     "test": "ng test",
