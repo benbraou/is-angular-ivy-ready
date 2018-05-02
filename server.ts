@@ -4,6 +4,8 @@ import 'zone.js/dist/zone-node';
 import 'reflect-metadata';
 
 import { renderModuleFactory } from '@angular/platform-server';
+import { ngExpressEngine } from '@nguniversal/express-engine';
+import { provideModuleMap } from '@nguniversal/module-map-ngfactory-loader';
 import { enableProdMode } from '@angular/core';
 
 import * as express from 'express';
@@ -17,39 +19,46 @@ enableProdMode();
 const app = express();
 
 const PORT = process.env.PORT || 4000;
-const DIST_FOLDER = join(process.cwd(), 'dist');
+const DIST_FOLDER = join(__dirname, '../');
 
 // Our index.html we'll use as our template
-const template = readFileSync(join(DIST_FOLDER, 'browser', 'index.html')).toString();
+// const template = readFileSync(join(DIST_FOLDER, 'index.html')).toString();
 
 // * NOTE :: leave this as require() since this file is built Dynamically from webpack
-const { AppServerModuleNgFactory, LAZY_MODULE_MAP } = require('./dist/server/main.bundle');
+const { AppServerModuleNgFactory, LAZY_MODULE_MAP } = require('../../dist-server/main.bundle');
 
-const { provideModuleMap } = require('@nguniversal/module-map-ngfactory-loader');
+// app.engine('html', (_, options, callback) => {
+//   renderModuleFactory(AppServerModuleNgFactory, {
+//     // Our index.html
+//     document: template,
+//     url: options.req.url,
+//     // DI so that we can get lazy-loading to work differently (since we need it to just instantly render it)
+//     extraProviders: [
+//       provideModuleMap(LAZY_MODULE_MAP)
+//     ]
+//   }).then(html => {
+//     callback(null, html);
+//   });
+// });
 
-app.engine('html', (_, options, callback) => {
-  renderModuleFactory(AppServerModuleNgFactory, {
-    // Our index.html
-    document: template,
-    url: options.req.url,
-    // DI so that we can get lazy-loading to work differently (since we need it to just instantly render it)
-    extraProviders: [
-      provideModuleMap(LAZY_MODULE_MAP)
-    ]
-  }).then(html => {
-    callback(null, html);
-  });
-});
+// Use ngExpressEngine
+app.engine(
+  'html',
+  ngExpressEngine({
+    bootstrap: AppServerModuleNgFactory,
+    providers: [provideModuleMap(LAZY_MODULE_MAP)],
+  })
+);
 
 app.set('view engine', 'html');
-app.set('views', join(DIST_FOLDER, 'browser'));
+app.set('views', DIST_FOLDER);
 
 // Server static files from /browser
-app.get('*.*', express.static(join(DIST_FOLDER, 'browser')));
+app.use(express.static(DIST_FOLDER, { index: false }));
 
 // All regular routes use the Universal engine
-app.get('*', (req, res) => {
-  res.render(join(DIST_FOLDER, 'browser', 'index.html'), { req });
+app.get('/*', (req, res) => {
+  res.render(join(DIST_FOLDER, 'index.html'), { req, res });
 });
 
 // Start up the Node server
