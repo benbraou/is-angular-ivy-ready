@@ -220,6 +220,10 @@
     tree-kill "^1.0.0"
     webpack-sources "^1.1.0"
 
+"@nguniversal/common@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@nguniversal/common/-/common-5.0.0.tgz#e89fdc34c540f3b818873f7d85d7da48abfc41ee"
+
 "@nguniversal/express-engine@^5.0.0":
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/@nguniversal/express-engine/-/express-engine-5.0.0.tgz#e218fa9fbc7b47379bc106f69ada274e05631243"

@@ -1,6 +1,9 @@
 // https://github.com/angular/angular-cli/wiki/stories-universal-rendering
 import { NgModule } from '@angular/core';
-import { ServerModule } from '@angular/platform-server';
+import {
+  ServerModule,
+  ServerTransferStateModule,
+} from '@angular/platform-server';
 import { ModuleMapLoaderModule } from '@nguniversal/module-map-ngfactory-loader';
 import { FlexLayoutServerModule } from '@angular/flex-layout/server';
 
@@ -14,6 +17,7 @@ import { AppComponent } from './app.component';
     AppModule,
     FlexLayoutServerModule,
     ServerModule,
+    ServerTransferStateModule,
     ModuleMapLoaderModule, // <-- *Important* to have lazy-loaded routes work
   ],
   // Since the bootstrapped component is not inherited from your

@@ -67,9 +67,6 @@ export class SpinnerCaptionDirective extends BaseDirective
   }
 
   private _injectFigure() {
-    if (!isPlatformBrowser(this._platformId)) {
-      return;
-    }
     const svgCircle = this.nativeElement.querySelector('svg circle');
     if (!svgCircle) {
       return;
@@ -79,9 +76,7 @@ export class SpinnerCaptionDirective extends BaseDirective
 
     // hacky solution to set the color until a similar feature to this request
     // https://github.com/angular/material2/issues/9069 is implemented
-    const color =
-      getComputedStyle(svgCircle).stroke ||
-      getComputedStyle(this.nativeElement).color;
+    const color = '#03a9f4';
 
     const figureElt = this._renderer.createElement('figure');
     const figcaptionElt = this._createFigcaptionEltElement(color);
