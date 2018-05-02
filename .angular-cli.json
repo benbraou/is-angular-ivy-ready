@@ -50,7 +50,8 @@
       "environments": {
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
-      }
+      },
+      "name": "universal"
     }
   ],
   "e2e": {
