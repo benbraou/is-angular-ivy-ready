@@ -10,8 +10,8 @@ import { OverallStatus } from '../../../models';
       *ngIf="!!percentage || !!nbrCompleted|| !!nbrPending">
       <app-stats-summary
         fxLayout="row"
-        fxFlex.gt-xs="100"
-        fxFlex.gt-sm="40"
+        fxFlex="40"
+        fxFlex.lt-md="100"
         [title]="title"
         [percentage]="percentage"
         [nbrCompleted]="nbrCompleted"
@@ -19,8 +19,8 @@ import { OverallStatus } from '../../../models';
         fxFlexOrder.lt-md="1">
       </app-stats-summary>
       <app-useful-links
-        fxFlex.gt-xs="100"
-        fxFlex.gt-sm="59"
+        fxFlex="59"
+        fxFlex.lt-md="100"
         fxHide.lt-sm>
       </app-useful-links>
     </div>
