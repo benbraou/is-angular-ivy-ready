@@ -11,8 +11,10 @@
       >
     </mat-progress-spinner>
     <mat-icon mat-list-icon fxHide.lt-sm>done</mat-icon>
-    <h4 fxHide.lt-sm>{{progressInfo.nbrCompleted}} <span fxHide.lt-md>features </span> completed</h4>
+    <h4 fxHide.lt-md>{{progressInfo.nbrCompleted}} features completed </h4>
+    <h4 fxHide.lt-sm fxHide.gt-sm>{{progressInfo.nbrCompleted}} completed </h4>
     <mat-icon mat-list-icon fxHide.lt-sm>clear</mat-icon>
-    <h4 fxHide.lt-sm>{{progressInfo.nbrPending}} <span fxHide.lt-md>features </span> pending</h4>
+    <h4 fxHide.lt-md>{{progressInfo.nbrPending}} features pending </h4>
+    <h4 fxHide.lt-sm fxHide.gt-sm>{{progressInfo.nbrPending}} pending </h4>
   </div>
 </mat-card>

@@ -7,87 +7,7 @@ import { DirectiveModule } from '../../directives/directive.module';
 import { MatIconModule } from '@angular/material';
 import { GranularStatusComponent } from '../common/granular-status/granular-status.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-const features = [
-  {
-    name:
-      'Rewrite existing code by interpreting the associated STORING_METADATA_IN_D.TS',
-    status: {
-      completed: false,
-      categories: null,
-      granularStatuses: [
-        {
-          category: '',
-          code: 'NOT_IMPLEMENTED',
-          description: '',
-        },
-      ],
-    },
-    childFeatures: [
-      {
-        name: '`PipeCompiler`: `@Pipe` => `definePipe`',
-        status: {
-          completed: false,
-          categories: null,
-          granularStatuses: [
-            {
-              category: '',
-              code: 'NOT_IMPLEMENTED',
-              description: '',
-            },
-          ],
-        },
-        childFeatures: null,
-      },
-      {
-        name: '`ComponentCompiler`: `@Component` => `defineComponent`',
-        status: {
-          completed: false,
-          categories: null,
-          granularStatuses: [
-            {
-              category: '',
-              code: 'NOT_IMPLEMENTED',
-              description: '',
-            },
-          ],
-        },
-        childFeatures: [
-          {
-            name: '`TemplateCompiler`',
-            status: {
-              completed: false,
-              categories: null,
-              granularStatuses: [
-                {
-                  category: '',
-                  code: 'NOT_IMPLEMENTED',
-                  description: '',
-                },
-              ],
-            },
-            childFeatures: null,
-          },
-          {
-            name: '`StyleCompiler`',
-            status: {
-              completed: false,
-              categories: null,
-              granularStatuses: [
-                {
-                  category: '',
-                  code: 'NOT_IMPLEMENTED',
-                  description: '',
-                },
-              ],
-            },
-            childFeatures: null,
-          },
-        ],
-      },
-    ],
-  },
-];
+import { featureLines } from '../../mocks/feature.mock';
 
 describe('FeatureLinesComponent', () => {
   let component: FeatureLinesComponent;
@@ -110,7 +30,7 @@ describe('FeatureLinesComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(FeatureLinesComponent);
     component = fixture.componentInstance;
-    component.features = features;
+    component.features = featureLines();
     fixture.detectChanges();
   });
 
@@ -132,25 +52,24 @@ describe('FeatureLinesComponent', () => {
       const accordionElement = fixture.debugElement.nativeElement.querySelector(
         'mat-accordion'
       );
-
       // check first title
       const title = accordionElement.querySelector(
         'mat-expansion-panel-header mat-panel-title'
-      ).firstChild;
+      ).lastChild;
       expect(title).toBeTruthy();
-      expect(title.textContent.trim()).toBe(features[0].name);
+      expect(title.textContent.trim()).toBe(featureLines()[0].name);
     });
   });
 
   describe('should render nested component for childFeatures', () => {
-    it('should have child component for childFeatures', () => {
+    it('should Lazy render child features', () => {
       // should have child component
       const accordionElement = fixture.debugElement.nativeElement.querySelectorAll(
         'app-feature-lines'
       );
-
+      console.log(accordionElement);
       expect(accordionElement).toBeTruthy();
-      expect(Array.from(accordionElement).length).toBeGreaterThan(1);
+      expect(Array.from(accordionElement).length).toBe(0);
     });
 
     it('should not display granular status for childFeatures which has granularStatuses length 1', () => {
@@ -161,21 +80,6 @@ describe('FeatureLinesComponent', () => {
 
       expect(component.features[0].status.granularStatuses.length).toBe(1);
       expect(granularStatus).toBeFalsy();
-    });
-  });
-
-  describe('should display card for all features', () => {
-    it('mat list item should be exactly equal as that of features', () => {
-      const matListItems = fixture.debugElement.nativeElement.querySelectorAll(
-        'mat-list-item'
-      );
-
-      // total mat-list-item are 5 considering childFeatures
-      expect(Array.from(matListItems).length).toBe(5);
-    });
-
-    it('should not display granular status for childFeatures which has granularStatuses length 1', () => {
-      expect(false).toBeFalsy();
     });
   });
 });
