@@ -27,12 +27,12 @@
     <mat-expansion-panel-header>
       <mat-panel-title>
           <div fxLayout="row wrap" fxLayoutAlign="left center">
-              {{feature.name}}
               <mat-icon mat-list-icon aria-hidden="true" [style.color]="feature.status.completed? 'green': 'red'">
                 {{feature.status.completed? 'done': 'clear'}}
               </mat-icon>
               <span class="cdk-visually-hidden">{{feature.status.completed? 'Implemented': 'Not implemented'}}</span>
-          </div>
+              {{feature.name}}
+            </div>
       </mat-panel-title>
     </mat-expansion-panel-header>
     <div *ngFor="let status of feature.status.granularStatuses">

@@ -1,0 +1,21 @@
+.mat-list-item {
+  color: #000000;
+  font-size: 14px;
+}
+
+.mat-expansion-panel-header {
+  height: 48px;
+  font-size: 14px;
+  &[aria-disabled='true'] {
+    color: #000000;
+  }
+}
+
+.mat-expansion-panel-content:not(.mat-expanded):not(.ng-animating) {
+  display: none;
+}
+
+h5 {
+  font-size: 14px;
+  font-weight: 400;
+}
