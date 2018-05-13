@@ -232,6 +232,10 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
+"@nguniversal/express-engine@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@nguniversal/express-engine/-/express-engine-5.0.0.tgz#e218fa9fbc7b47379bc106f69ada274e05631243"
+
 "@nguniversal/module-map-ngfactory-loader@^5.0.0":
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/@nguniversal/module-map-ngfactory-loader/-/module-map-ngfactory-loader-5.0.0.tgz#359c9283d942ed7806647e66c29ee2e9fb90df6e"

@@ -58,7 +58,7 @@ app.use(express.static(DIST_FOLDER, { index: false }));
 
 // All regular routes use the Universal engine
 app.get('/*', (req, res) => {
-  res.render(join(DIST_FOLDER, 'index.html'), { req, res });
+  res.render(join(DIST_FOLDER, 'index-1.html'), { req, res });
 });
 
 // Start up the Node server
