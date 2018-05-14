@@ -12,7 +12,7 @@ before_install:
   # Install latest chrome.
   - export CHROME_BIN=chromium-browser
 install:
-  - npm install
+  - yarn install
 script:
-  - npm run lint
+  - yarn run lint
   - ng test --single-run
