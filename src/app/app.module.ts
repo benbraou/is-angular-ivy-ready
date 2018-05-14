@@ -3,10 +3,13 @@ import {
   BrowserTransferStateModule,
 } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ServiceWorkerModule } from '@angular/service-worker';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { TransferHttpCacheModule } from '@nguniversal/common';
+
+import { environment } from '../environments/environment';
 
 import { AppComponent } from './app.component';
 import { LoggerService } from './services/logger.service';
@@ -21,6 +24,9 @@ import { ResponseEnhancerService } from './services/response-enhancer.service';
   declarations: [AppComponent],
   imports: [
     BrowserModule.withServerTransition({ appId: 'is-angular-ivy-ready' }),
+    ServiceWorkerModule.register('/ngsw-worker.js', {
+      enabled: environment.production,
+    }),
     TransferHttpCacheModule,
     BrowserAnimationsModule,
     ComponentModule.forRoot(),

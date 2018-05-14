@@ -18,6 +18,7 @@
       "tsconfig": "tsconfig.app.json",
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
+      "serviceWorker": true,
       "styles": [
         "styles.scss"
       ],
@@ -29,6 +30,7 @@
       }
     },
     {
+      "name": "universal",
       "root": "src",
       "outDir": "dist-server",
       "assets": [
@@ -50,8 +52,7 @@
       "environments": {
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
-      },
-      "name": "universal"
+      }
     }
   ],
   "e2e": {
