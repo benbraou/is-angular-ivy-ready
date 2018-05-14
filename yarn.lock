@@ -131,7 +131,7 @@
   dependencies:
     tslib "^1.7.1"
 
-"@angular/flex-layout@^5.0.0-beta.14":
+"@angular/flex-layout@5.0.0-beta.14":
   version "5.0.0-beta.14"
   resolved "https://registry.yarnpkg.com/@angular/flex-layout/-/flex-layout-5.0.0-beta.14.tgz#300e1cba2ef1a70f43fe7ea68ea78267cb4241e4"
   dependencies:
@@ -185,6 +185,12 @@
   dependencies:
     tslib "^1.7.1"
 
+"@angular/service-worker@^5.0.0":
+  version "5.2.10"
+  resolved "https://registry.yarnpkg.com/@angular/service-worker/-/service-worker-5.2.10.tgz#ef861929e2ca5f1241f44be1ad5295544486514c"
+  dependencies:
+    tslib "^1.7.1"
+
 "@babel/code-frame@^7.0.0-beta.35":
   version "7.0.0-beta.44"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.0.0-beta.44.tgz#2a02643368de80916162be70865c97774f3adbd9"
@@ -219,6 +225,14 @@
     source-map "^0.5.6"
     tree-kill "^1.0.0"
     webpack-sources "^1.1.0"
+
+"@nguniversal/common@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@nguniversal/common/-/common-5.0.0.tgz#e89fdc34c540f3b818873f7d85d7da48abfc41ee"
+
+"@nguniversal/express-engine@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@nguniversal/express-engine/-/express-engine-5.0.0.tgz#e218fa9fbc7b47379bc106f69ada274e05631243"
 
 "@nguniversal/module-map-ngfactory-loader@^5.0.0":
   version "5.0.0"

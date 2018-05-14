@@ -1,0 +1,34 @@
+{
+  "index": "/index.html",
+  "dataGroups": [
+    {
+      "name": "from-api",
+      "urls": ["https://ivy-status-api.appspot.com/v1/status"],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "maxSize": 15,
+        "maxAge": "1h",
+        "timeout": "5s"
+      }
+    }
+  ],
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "resources": {
+        "files": ["/favicon.ico", "/index.html"],
+        "versionedFiles": ["/*.bundle.css", "/*.bundle.js", "/*.chunk.js"]
+      }
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": ["/assets/**"],
+        "urls": ["https://fonts.googleapis.com/**"]
+      }
+    }
+  ]
+}
