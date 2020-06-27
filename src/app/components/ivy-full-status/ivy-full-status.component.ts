@@ -8,11 +8,18 @@ import { ENHANCED_IVY_RESPONSE } from '../../mocks/ivy-api.mock';
 @Component({
   selector: 'app-ivy-status',
   template: `
+    <mat-card class="mat-typography">
+      <mat-card-title style="text-align: center;">
+        <h1>Yes, since version 9!<i>🎉</i></h1>
+      </mat-card-title>
+    </mat-card>
+    <div style="margin:10px"></div>
     <app-ivy-overview
-      [title] = "'Overall status'"
+      [title]="'Overall status'"
       [percentage]="overallStatus?.progressPercentage"
       [nbrCompleted]="overallStatus?.nbrFeaturesCompleted"
-      [nbrPending]="overallStatus?.nbrFeaturesPending">
+      [nbrPending]="overallStatus?.nbrFeaturesPending"
+    >
     </app-ivy-overview>
     <div style="margin:10px"></div>
     <app-feature-group-tree [node]="rootFeatureGroup"></app-feature-group-tree>
