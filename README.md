@@ -29,7 +29,7 @@ Basically, it just parses [STATUS.md](https://github.com/angular/angular/blob/ma
 Please feel free to open [an issue](https://github.com/benbraou/is-angular-ivy-ready/issues?state=open).  
 Pull requests with the fix and a test are welcome.  
 To set up your local development environment, clone/fork and then run `yarn install`.  
-To launch tets `yarn test` or `yarn test:no-sourcemaps`  
+To launch test `yarn test` or `yarn test:no-sourcemaps`  
 To launch the server `yarn start`.  
 
 ## License
